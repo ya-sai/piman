@@ -1,5 +1,5 @@
 # Piman UI framework
-> Piman is an open-source UI framework built by Blueplanet Inc.
+> Piman is an open-source accessibility UI framework create by Blueplanet Inc.
 
 ![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/npm/v16.13.0/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) ![image](https://badgen.net/badge/chat/discord/blue) 
 
