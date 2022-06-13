@@ -1,0 +1,29 @@
+.#{$prefix}-card {
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+  background-color: $color-white;
+  .#{$prefix}-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid $border-color;
+  }
+  .#{$prefix}-card-container {
+    padding: 1rem;
+    word-break: break-all;
+    word-break: break-word;
+  }
+  .#{$prefix}-card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid $border-color;
+  }
+  &.#{$prefix}-card--shadow {
+    box-shadow: $box-shadow;
+  }
+}

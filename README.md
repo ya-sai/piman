@@ -43,7 +43,7 @@ Modern browsers and Internet Explorer 11+.
 [See our site](https://piman.notion.site/Piman-6389e4787ceb405abe42ffb37cfe1ca4) for full docs and guidelines.
 
 ## 😎 Contributing
-We're looking for contributors to help us improve the project. If you're interested, definitely check out our [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) and our [Developer Guide](https://www.notion.so/piman/Developer-4d5c910dfbee4066b455cb07d0684af8)! 
+We're looking for contributors to help us improve the project. If you're interested, definitely check out our [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) and our [Developer Guide](https://piman.notion.site/Contributors-Piman-4d5c910dfbee4066b455cb07d0684af8)! 
 
 ## 💬 Community
 (coming soon)

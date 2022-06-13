@@ -1,0 +1,15 @@
+.#{$prefix}-popover {
+  position: relative;
+}
+.#{$prefix}-popover-container {
+  position: absolute;
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  word-break: break-all;
+  word-break: break-word;
+  max-width: nth($breakpoint, 3);
+  overflow: hidden;
+}

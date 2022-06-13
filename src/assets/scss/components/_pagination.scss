@@ -1,0 +1,95 @@
+.#{$prefix}-pagination-group {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-start;
+  // align-items: center;
+  display: block;
+  color: $color-black;
+  @media screen and(max-width: nth($breakpoint, 2)){
+    display: block;
+  }
+}
+.#{$prefix}-pagination-group__item {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-start;
+  // align-items: center;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  @media screen and(max-width: nth($breakpoint, 2)){
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .#{$prefix}-select-text {
+    margin: 0 0.25rem;
+  }
+  &.#{$prefix}-pagination-group__item--jump {
+    label {
+      display: flex;
+      align-items: center;
+    }
+    @media screen and(max-width: nth($breakpoint, 2)){
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.#{$prefix}-pagination-info {
+  margin: 0 0.25rem;
+  display: inline-block;
+  vertical-align: middle;
+  @media screen and(max-width: nth($breakpoint, 2)){
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  // .page-size-select {
+  //   .#{$prefix}-btn {
+  //     min-width: 0;
+  //     padding-right: 2rem;
+  //   }
+  // }
+  &.#{$prefix}-pagination-info--pagesize {
+    // display: flex;
+    // align-items: center;
+    @media screen and(max-width: nth($breakpoint, 2)){
+      display: none;
+    }
+  }
+}
+.#{$prefix}-pagination {
+  margin: 0 1rem;
+  @media screen and(max-width: nth($breakpoint, 2)){
+   margin: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media screen and(max-width: nth($breakpoint, 2)){
+      display: block;
+    }
+    li {
+      margin: 0 0.25rem;
+      @media screen and(max-width: nth($breakpoint, 2)){
+        display: none;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &.current,
+      &.prev,
+      &.next {
+        @media screen and(max-width: nth($breakpoint, 2)){
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<template>
+  <div>
+    <section>
+      <h2>輸入框</h2>
+      <article>
+        <section>
+          <h3>大小</h3>
+          <bpa-input
+            v-model="value"
+            size="small"
+          />
+          <bpa-input
+            v-model="value"
+          />
+          <bpa-input
+            v-model="value"
+            size="large"
+          />
+        </section>
+        <section>
+          <h3>客製化預設文字</h3>
+          <bpa-input
+            v-model="value"
+            placeholder="客製化文字"
+          />
+        </section>
+        <section>
+          <h3>禁用</h3>
+          <bpa-input
+            v-model="value"
+            disabled
+          />
+        </section>
+        <section>
+          <h3>唯讀</h3>
+          <bpa-input
+            v-model="value"
+            readonly
+          />
+        </section>
+        <section>
+          <h3>必填</h3>
+          <bpa-input
+            v-model="value"
+            required
+          />
+        </section>
+        <section>
+          <h3>錯誤狀態</h3>
+          <bpa-input
+            v-model="value"
+            error
+          />
+        </section>
+        <section>
+          <h3>快捷鍵注目焦點（範例：K）</h3>
+          <bpa-input
+            v-model="value"
+            accesskey="K"
+          />
+        </section>
+        <section>
+          <h3>不顯示清空按鈕</h3>
+          <bpa-input
+            v-model="value"
+            disabledClear
+          />
+        </section>
+        <section>
+          <h3>類型</h3>
+          <bpa-input
+            v-model="value"
+            type="password"
+            placeholder="這是密碼"
+          />
+          <bpa-input
+            v-model="value"
+            type="textarea"
+             placeholder="這是多行文字"
+          />
+        </section>
+      </article>
+    </section>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      value:''
+    }
+  }
+})
+</script>

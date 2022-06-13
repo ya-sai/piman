@@ -1,0 +1,79 @@
+// -------------------------------------
+//   link
+// -------------------------------------
+
+a {
+  color: $color-primary;
+  transition: opacity 160ms ease-in;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $outline-color;
+  }
+  &:visited {
+    color: $color-visited;
+  }
+}
+
+
+// -------------------------------------
+//   Button
+// -------------------------------------
+
+button {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $outline-color;
+  }
+}
+
+
+// -------------------------------------
+//   Input
+// -------------------------------------
+
+textarea {
+  resize: vertical;
+}
+
+
+// -------------------------------------
+//   Padding, Margin
+// -------------------------------------
+
+.no-padding {
+  padding: 0!important;
+}
+
+
+// -------------------------------------
+//   A11y
+// -------------------------------------
+
+.visually-hidden {
+  @include visually-hidden();
+}
+
+.visually-hidden-focusable {
+  @include visually-hidden-focusable();
+}
+
+
+// -------------------------------------
+//   Vue animation
+// -------------------------------------
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
