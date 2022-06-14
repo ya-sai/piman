@@ -1,0 +1,45 @@
+@media print {
+  @page{
+    size: A4 portrait;
+    margin: 1rem;
+    orphans:4;
+    widows:2;
+  }
+  html, body {
+    width: 1123px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    &+p {
+      page-break-before: avoid;
+    }
+  }
+  a {
+    page-break-inside: avoid;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-decoration: underline;
+  }
+  img {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    max-width: 100%
+  }
+  table, blockquote {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  thead{
+    display: table-header-group;
+  }
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+}
+
+@media print and (color){
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}

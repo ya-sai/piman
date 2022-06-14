@@ -1,0 +1,161 @@
+// *************************************
+//
+//  Utilities
+//
+// *************************************
+
+// -------------------------------------
+//   Text Color
+// -------------------------------------
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.color-warning {
+  color: $color-warning;
+}
+
+.color-danger {
+  color: $color-danger;
+}
+
+
+// -------------------------------------
+//   Typograph
+// -------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+
+// -------------------------------------
+//   Keyboard
+// -------------------------------------
+
+kbd {
+  border-radius: 0.25rem;
+  box-shadow:  0 0.25rem 0.5rem rgba($color-black, 0.15);
+  padding: 0 0.25rem;
+  border: 1px solid $border-color;
+  margin: 0 0.125rem 0.5rem;
+  font-family: $font-family;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+// -------------------------------------
+//   Article
+// -------------------------------------
+
+section {
+  section {
+    &.info {
+      background-color: lighten($color-primary, 60%);
+      margin-bottom: 0;
+      padding: 1rem;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+
+// -------------------------------------
+//   Table
+// -------------------------------------
+
+table {
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  width: 100%;
+  th {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-right: 1px solid $border-color;
+    background-color: lighten($color-primary, 40%);
+    word-break: break-all;
+    word-break: break-word;
+    @media screen and(max-width: nth($breakpoint, 2)){
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  tr {
+    border-bottom: 1px solid $border-color;
+  }
+  td {
+    border-right: 1px solid $border-color;
+    padding: 0.5rem 1rem;
+    word-break: break-all;
+    word-break: break-word;
+    @media screen and(max-width: nth($breakpoint, 2)){
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
+
+// -------------------------------------
+//   Tag
+// -------------------------------------
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid $color-black;
+  display: inline-block;
+  vertical-align: middle;
+  &.tag--primary {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+  &.tag--success {
+    color: $color-success;
+    border-color: $color-success;
+  }
+  &.tag--warning {
+    color: $color-warning;
+    border-color: $color-warning;
+  }
+  &.tag--danger {
+    color: $color-danger;
+    border-color: $color-danger;
+  }
+}

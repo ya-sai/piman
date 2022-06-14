@@ -1,0 +1,67 @@
+// *************************************
+//
+//  Layout: global layout setting
+//
+// *************************************
+
+* {
+  line-height: 1.5;
+  letter-spacing: 0.14rem;
+  word-spacing: 0.16rem;
+}
+
+html, 
+body {
+  font-size: $font-size-base;
+  font-family: $font-family;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  #__nuxt {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  background-color: $color-white;
+  @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+    height: 100vh;
+  }
+}
+
+.container {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+.main {
+  width: 100%;
+  max-width: nth($breakpoint, 5);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  @media screen and (max-width: nth($breakpoint, 2)){
+    padding: 0 1rem;
+  }
+}
+
+.noscript {
+  position: fixed;
+  top: 1rem;
+  left: calc(50% - 150px);
+  width: 300px;
+  background-color: $color-white;
+  border-radius: 0.25rem;
+  color: $color-black;
+  font-size: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 0.25rem 1rem rgba($color-black, 0.12);
+}

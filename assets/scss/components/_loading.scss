@@ -1,0 +1,33 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  // background-color: rgba($color-primary, 0.3);
+  // backdrop-filter: blur(4px);
+  .loading-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 626px;
+    text-align: center;
+    @media screen and(max-width: nth($breakpoint, 2)){
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  .loader {
+    border: 1rem solid $border-color;
+    border-radius: 50%;
+    border-top: 1rem solid $color-primary;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+  }
+}
