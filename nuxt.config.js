@@ -4,7 +4,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - ' + process.env.WEBSITE_NAME,
-    title: 'page title',
+    title: 'Home',
     htmlAttrs: {
       lang: 'zh-Hant-TW'
     },
@@ -122,9 +122,6 @@ export default {
     parallel: false,
     hardSource: false,
     indicator: false,
-    transpile:[
-      'canvg'
-    ],
     extend(config, ctx) {}
   },
 

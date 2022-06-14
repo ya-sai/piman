@@ -9,18 +9,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data: () => ({
-    loading: false
-  }),
-  methods: {
-    start() {
-      this.loading = true
-    },
-    finish() {
-      this.loading = false
+  import Vue from 'vue'
+  export default Vue.extend({
+    data: () => ({
+      loading: false
+    }),
+    methods: {
+      start() {
+        this.loading = true
+      },
+      finish() {
+        this.loading = false
+      }
     }
-  }
-})
+  })
 </script>

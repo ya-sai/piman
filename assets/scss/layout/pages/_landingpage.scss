@@ -1,0 +1,76 @@
+.wrapper--landingpage {
+  background-image: url('@/assets/images/bg.svg') ;
+  background-size: 100% auto;
+  background-position: top 12rem center;
+  background-repeat: no-repeat;
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0;
+    a {
+      color: $color-black;
+    }
+  }
+  .menu {
+    .#{$prefix}-btn {
+      position: relative;
+      background-color: transparent;
+      color: $color-black;
+      border: 0;
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: bold;
+      padding: 0 0 0.5rem 0;
+      &:after {
+        display: none;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 0.1875rem;
+        border-radius: 0.09375rem;
+        background-color: $color-black;
+      }
+    }
+  }
+  .page {
+    margin: 0 4rem;
+    @media screen and (max-width: nth($breakpoint, 2)) {
+      margin: 0 1rem;
+    }
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    @media screen and (max-width: nth($breakpoint, 2)) {
+      padding-top: 1rem;
+    }
+  }
+  section {
+    &.hero {
+      text-align: center;
+      img {
+        max-height: 337px;
+        width: auto;
+        object-fit: contain;
+        margin-bottom: 4rem;
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          max-height: 240px;
+        }
+      }
+      h2 {
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .page-footer {
+    flex-shrink: 0;
+  }
+}
