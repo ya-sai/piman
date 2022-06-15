@@ -202,11 +202,22 @@
               <p>Piman 會不定期分享無障礙網頁設計的資訊，歡迎訂閱！ 📰</p>
               <!-- <div class="subscribe-title">Let's stay in touch!</div>
               <p>Join our newsletter, so that we reach out to you with our best news. 📰</p> -->
-              <label for="subscribe-input">
-                <bpa-input id="subscribe-input" placeholder="請輸入電子郵件地址"/>
-              </label>
-              <br>
-              <bpa-button theme="primary">訂閱電子報</bpa-button>
+              <form
+                name="reply-form"
+                id="reply-gform"
+                enctype="text/plain"
+                method="get"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/formResponse?"
+                target="hidden_iframe"
+                onsubmit="submitted=true;"
+              >
+                <label for="entry.1423896898">
+                  <bpa-input placeholder="請輸入電子郵件地址" name="entry.1423896898" id="entry.1423896898"/>
+                </label>
+                <br>
+                <bpa-button type="submit" theme="primary">訂閱電子報</bpa-button>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+              </form>
             </div>
           </div>
         </section>
