@@ -39,7 +39,7 @@ export default {
     ],
     link: [
       // favicon
-      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: 'favicon.png' },
       // { rel: 'apple-touch-icon-precomposed', sizes: '32x32', href: '/images/favicon/favicon-32.png' },
       // { rel: 'apple-touch-icon-precomposed', sizes: '128x128', href: '/images/favicon/favicon-128.png' },
       // { rel: 'apple-touch-icon-precomposed', sizes: '152x152', href: '/images/favicon/favicon-152.png' },
