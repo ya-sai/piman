@@ -15,7 +15,6 @@ body {
   font-size: $font-size-base;
   font-family: $font-family;
   color: $color-black;
-  background-color: $color-white;
 }
 
 body {
@@ -32,7 +31,7 @@ body {
   flex-direction: column;
   flex: 1;
   min-height: 100vh;
-  background-color: $color-white;
+  background-color: lighten($color-warning, 40%);
   @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
     height: 100vh;
   }
@@ -43,13 +42,19 @@ body {
   flex: 1 0 auto;
 }
 
-.main {
-  width: 100%;
-  max-width: nth($breakpoint, 5);
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  @media screen and (max-width: nth($breakpoint, 2)){
-    padding: 0 1rem;
+#ak-jump {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.875rem;
+  color: transparent;
+  &:focus-within {
+    color: $color-primary;
+  }
+  @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+    &:focus {
+      color: $color-primary;
+    }
   }
 }
 
