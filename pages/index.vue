@@ -62,8 +62,7 @@
           <div class="reasons__box">
             <div class="reasons-left">
               <div class="reasons-title">
-                應該使用符合無障礙網頁設計 UI 框架的其中 7 個理由<br>
-                <!-- 7 reasons to use Piman for projects / products<br> -->
+                應該使用符合無障礙網頁設計 UI 框架的其中 7 個理由
                 💪💪💪
               </div>
             </div>
@@ -115,12 +114,12 @@
             </div>
           </div>
           <div class="demo-right">
-            <iframe src="https://codesandbox.io/embed/piman-form-klm4on?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark"
+            <!-- <iframe src="https://codesandbox.io/embed/piman-form-klm4on?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark"
               style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
               title="Piman-Form"
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-            ></iframe>
+            ></iframe> -->
           </div>
         </section>
         <section class="faq" id="faq">
