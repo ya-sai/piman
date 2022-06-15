@@ -103,6 +103,10 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  router: {
+    base: '/piman/'
+  },
+
   // routerModule: {
   //   path: 'router/'
   // },
