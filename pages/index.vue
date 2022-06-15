@@ -24,8 +24,8 @@
           <h2>Piman</h2>
           <p>一款聚焦於無障礙的開源 UI 框架。</p>
           <div style="margin-bottom: 7.5rem;">
-            <nuxt-link class="bpa-btn bpa-btn--primary" to="https://piman.notion.site/How-to-Use-e14a8f80aa3d40859f16916bbd16aa9b" title="Getting Start Piman">快速開始</nuxt-link>
-            <nuxt-link class="bpa-btn" to="https://github.com/ya-sai/piman" title="go to Github">Github</nuxt-link>
+            <a class="bpa-btn bpa-btn--primary" href="https://piman.notion.site/How-to-Use-e14a8f80aa3d40859f16916bbd16aa9b" title="另開視窗前往快速開始頁面" target="_blank" rel="noreferrer noopener">快速開始</a>
+            <a class="bpa-btn" href="https://github.com/ya-sai/piman" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">Github</a>
           </div>
           <bpa-button class="bpa-btn--circle" style="display: flex;margin: 0 auto 0.5rem; align-items: center; justify-content: center;">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

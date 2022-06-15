@@ -94,6 +94,9 @@
           margin: 0 0 1rem;
           width: 100%;
         }
+        &:nth-child(2) {
+          color: $color-black;
+        }
       }
     }
     &.intro {
@@ -549,6 +552,7 @@
     border-top: 1px solid $border-color;
     @media screen and (max-width: nth($breakpoint, 1)) {
       display: block;
+      margin-top: 3rem;
     }
     > div {
       margin-bottom: 1rem;
