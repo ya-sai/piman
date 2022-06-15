@@ -19,7 +19,7 @@
           <div class="deco-piman">
             <!-- <img src="/images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
             <img src="/images/piman-yellow.svg" alt="" class="deco-piman-yellow" loading="lazy"> -->
-            <img src="/images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
+            <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <h2>Piman</h2>
           <p>一款聚焦於無障礙的開源 UI 框架。</p>
@@ -38,9 +38,9 @@
         </section>
         <section class="intro" id="intro">
           <div class="deco-piman">
-            <img src="/images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
-            <img src="/images/piman-yellow.svg" alt="" class="deco-piman-yellow" loading="lazy">
-            <img src="/images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
+            <img src="images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
+            <img src="images/piman-yellow.svg" alt="" class="deco-piman-yellow" loading="lazy">
+            <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <div class="intro-title">
             <div>Accessibility</div><div>Design System</div><div>UI Freamework</div>
@@ -202,7 +202,7 @@
               <p>Piman 會不定期分享無障礙網頁設計的資訊，歡迎訂閱！ 📰</p>
               <!-- <div class="subscribe-title">Let's stay in touch!</div>
               <p>Join our newsletter, so that we reach out to you with our best news. 📰</p> -->
-              <form
+              <!-- <form
                 name="reply-form"
                 id="reply-gform"
                 enctype="text/plain"
@@ -210,14 +210,14 @@
                 action="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/formResponse?"
                 target="hidden_iframe"
                 onsubmit="submitted=true;"
-              >
+              > -->
                 <label for="entry.1423896898">
-                  <bpa-input placeholder="請輸入電子郵件地址" name="entry.1423896898" id="entry.1423896898"/>
+                  <bpa-input placeholder="請輸入電子郵件地址" id="entry.1423896898" name="entry.1423896898"/>
                 </label>
                 <br>
-                <bpa-button type="submit" theme="primary">訂閱電子報</bpa-button>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-              </form>
+                <bpa-button theme="primary">訂閱電子報</bpa-button>
+                <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+              <!-- </form> -->
             </div>
           </div>
         </section>
@@ -233,7 +233,7 @@
       <div>
         <ul>
           <li>
-            <a href="" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">
+            <a href="https://github.com/ya-sai/piman" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                 <title>另開視窗前往 Github</title>
                 <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
