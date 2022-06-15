@@ -4,7 +4,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - ' + process.env.WEBSITE_NAME,
-    title: 'Home',
+    title: '首頁',
     htmlAttrs: {
       lang: 'zh-Hant-TW'
     },
@@ -55,9 +55,9 @@ export default {
       // { rel: 'apple-touch-startup-image', href: '/images/splash/splash-1242x2208.png', media: '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)' },
     
       // font
-      // { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-      // { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''},
-      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap' },
     ],
     // script: [
     // ]

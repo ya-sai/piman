@@ -1,8 +1,11 @@
 .wrapper--landingpage {
-  background-image: url('@/assets/images/bg.svg') ;
+  background-image: url('@/assets/images/bg.svg');
   background-size: 100% auto;
   background-position: top 12rem center;
   background-repeat: no-repeat;
+  @media screen and (max-width: nth($breakpoint, 1)) {
+    background-size: auto 100%;
+  }
   h1 {
     font-size: 1.5rem;
     line-height: 1;
@@ -38,7 +41,7 @@
   }
   .page {
     margin: 0 4rem;
-    @media screen and (max-width: nth($breakpoint, 2)) {
+    @media screen and (max-width: nth($breakpoint, 3)) {
       margin: 0 1rem;
     }
   }
@@ -47,30 +50,521 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     @media screen and (max-width: nth($breakpoint, 2)) {
       padding-top: 1rem;
     }
   }
   section {
-    &.hero {
+    .deco-piman {
+      position: relative;
       text-align: center;
-      img {
+      height: 337px;
+      margin-bottom: 4rem;
+      @media screen and (max-width: nth($breakpoint, 2)) {
+        height: 180px;
+      }
+      img[class*="deco-piman-"] {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
         max-height: 337px;
         width: auto;
         object-fit: contain;
-        margin-bottom: 4rem;
         @media screen and (max-width: nth($breakpoint, 2)) {
-          max-height: 240px;
+          max-height: 140px;
         }
       }
+    }
+    &.hero {
+      text-align: center;
+      padding-top: 4rem;
       h2 {
         font-size: 4rem;
         line-height: 1;
         margin-bottom: 1rem;
       }
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: nth($breakpoint, 1)) {
+          margin: 0 0 1rem;
+          width: 100%;
+        }
+      }
+    }
+    &.intro {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
+      text-align: center;
+      .deco-piman {
+       
+        img.deco-piman-red {
+          transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 15deg);
+        }
+        img.deco-piman-green {
+          transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -15deg);
+        }
+      }
+      
+      .intro-title {
+        padding-bottom: 4rem;
+        display: flex;
+        font-size: 2rem;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: nth($breakpoint, 4)) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          font-size: 1.25rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          display: block;
+        }
+        @media screen and (max-width: nth($breakpoint, 1)) {
+          padding-bottom: 2rem;
+        }
+        > div {
+          display: inline-block;
+          vertical-align: top;
+          @media screen and (max-width: nth($breakpoint, 1)) {
+            display: block;
+          }
+          &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-primary;
+            border-radius: 50%;
+            margin-right: 1rem;
+            @media screen and (max-width: nth($breakpoint, 3)) {
+              width: 0.5rem;
+              height: 0.5rem;
+            }
+          }
+          &:after {
+            content: 'x';
+            margin-left: 1rem;
+            margin-right: 1rem;
+            color: lighten($color-gray, 20%);
+            @media screen and (max-width: nth($breakpoint, 1)) {
+              display: none;
+            }
+          }
+          &:nth-child(2) {
+            &:before {
+              background-color: lighten($color-warning, 3);
+            }
+          }
+          &:last-child {
+            &:before {
+              background-color: $color-danger;
+            }
+            &:after {
+              display: none;
+            }
+          }
+          
+        }
+      }
+      p {
+        max-width: nth($breakpoint, 1);
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2;
+      }
+    }
+    &.reasons {
+      width: calc(100% + 8rem);
+      margin-left: -4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      background-color: darken($color-primary, 10%);
+      @media screen and (max-width: nth($breakpoint, 3)) {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .reasons__box {
+        display: flex;
+        margin: 0 auto;
+        max-width: nth($breakpoint, 5);
+        background: url('@/assets/images/reason-bg.svg') left bottom no-repeat;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          display: block;
+          background: none;
+        }
+      }
+      .reasons-left {
+        width: 41.6666%;
+        padding: 7.5rem 8.3333% 7.5rem 0;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          width: 100%;
+          padding: 7.5rem 0 0;
+        }
+      }
+      .reasons-right {
+        flex: 1;
+        padding: 7.5rem 0;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          padding: 0 0 7.5rem;
+        }
+      }
+      .reasons-title {
+        font-weight: bold;
+        font-size: 3rem;
+        color: $color-white;
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          font-size: 2rem;
+        }
+      }
+      .reasons-list {
+        counter-reset: reasons;
+        li {
+          word-break: break-all;
+          word-break: break-word;
+          &:before {
+            counter-increment: reasons;
+            content: "0"counter(reasons);
+            font-size: 4rem;
+            font-weight: bold;
+            color: darken($color-primary, 10%);
+            -webkit-text-stroke: 1px rgba($color-white, 0.6);
+            @media screen and (max-width: nth($breakpoint, 2)) {
+              font-size: 2rem;
+            }
+          }
+          > div {
+            padding-left: 5rem;
+            color: $color-white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            @media screen and (max-width: nth($breakpoint, 2)) {
+              padding-left: 3rem;
+            }
+            &+div {
+              color: rgba($color-white, 0.9);
+              font-size: 1rem;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+    &.demo {
+      display: flex;
+      margin-left: -4rem;
+      width: calc(100% + 8rem);
+      padding: 7.5rem 4rem;
+      background-color: $color-white;
+      @media screen and (max-width: nth($breakpoint, 3)) {
+        display: block;
+        margin-left: -1rem;
+        width: calc(100% + 2rem);
+        padding: 7.5rem 1rem;
+      }
+      .demo-left {
+        width: 41.6666%;
+        padding-right: 4rem;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          width: 100%;
+          padding: 0;
+        }
+        ul {
+          padding-left: 1.5rem;
+          li {
+            list-style-type: "\1F44D";
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+          }
+        }
+        .cta {
+          text-align: right;
+          @media screen and (max-width: nth($breakpoint, 3)) {
+            text-align: center;
+          }
+          >div {
+            font-size: 6rem;
+            font-weight: bold;
+            color: $color-white;
+            -webkit-text-stroke: 2px $color-black;
+            @media screen and (max-width: nth($breakpoint, 5)) {
+              font-size: 4rem;
+            }
+            @media screen and (max-width: nth($breakpoint, 1)) {
+              font-size: 2rem;
+            }
+            &:nth-child(2) {
+              @media screen and (max-width: nth($breakpoint, 3)) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .demo-right {
+        flex: 1;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          height: 100vh;
+          height: 100dvh;
+        }
+      }
+      .demo-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 4rem;
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          font-size: 2rem;
+        }
+      }
+    }
+    &.faq {
+      margin-left: -4rem;
+      width: calc(100% + 8rem);
+      padding: 7.5rem 4rem;
+      background-color: $color-white;
+      @media screen and (max-width: nth($breakpoint, 3)) {
+        margin-left: -1rem;
+        width: calc(100% + 2rem);
+        padding: 1rem;
+      }
+      .faq__box{
+        display: flex;
+        margin: 0 auto;
+        max-width: nth($breakpoint, 5);
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          display: block;
+        }
+      }
+      .faq-left {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: bold;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          width: 100%;
+        }
+      }
+      .faq-right {
+        flex: 1;
+        padding-right: 12.5%;
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          padding-right: 0;
+        }
+      }
+    }
+    &.resources {
+      width: calc(100% + 8rem);
+      margin-left: -4rem;
+      padding: 5rem 4rem;
+      background-color:$color-white;
+      overflow: hidden;
+      @media screen and (max-width: nth($breakpoint, 3)) {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        padding: 5rem 1rem;
+      }
+      .resources__box {
+        position: relative;
+        margin: 0 auto;
+        padding: 4rem 4rem 4rem 0;
+        max-width: nth($breakpoint, 5);
+        background-color: lighten($color-danger, 40%);
+        box-shadow: 1rem 1rem 0 rgba(lighten($color-danger, 40%), 0.6);
+        @media screen and (max-width: nth($breakpoint, 4)) {
+          padding: 4rem 0 1rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          border-radius: 4rem;
+        }
+      }
+      .resources-title {
+        position: absolute;
+        top: 245px;
+        right: 140px;
+        font-size: 3rem;
+        font-weight: bold;
+        @media screen and (max-width: nth($breakpoint, 4)) {
+          top: 7.5rem;
+          right: 7.5rem;
+          font-size: 2rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          position: relative;
+          top: inherit;
+          right: inherit;
+          text-align: center;
+          margin-bottom: 4rem;
+        }
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate3d(20%, -80%, 0);
+          @media screen and (max-width: nth($breakpoint, 4)) {
+            width: 100%;
+            transform: translate3d(60%, -80%, 0);
+          }
+          @media screen and (max-width: nth($breakpoint, 2)) {
+            display: none;
+          }
+        }
+      }
+      .resources-list {
+        position: relative;
+        left: -2rem;
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          left: 0;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10rem;
+          @media screen and (max-width: nth($breakpoint, 4)) {
+            margin-bottom: 4rem;
+          }
+          @media screen and (max-width: nth($breakpoint, 2)) {
+            display: block;
+          }
+          a {
+            display: block;
+            img {
+              width: 30rem;
+              height: auto;
+              border: 1px solid $border-color;
+              @media screen and (max-width: nth($breakpoint, 4)) {
+                width: 20rem;
+                height: auto;
+              }
+              @media screen and (max-width: nth($breakpoint, 2)) {
+                width: 100%;
+                height: auto;
+                transform: scale(1.05);
+              }
+            };
+          }
+          >div {
+            font-size: 6rem;
+            font-weight: bold;
+            color: lighten($color-danger, 40%);
+            -webkit-text-stroke: 2px $color-black;
+            padding-left: 1rem;
+            @media screen and (max-width: nth($breakpoint, 5)) {
+              font-size: 4rem;
+            }
+            @media screen and (max-width: nth($breakpoint, 2)) {
+              text-align: center;
+              padding-left: 0;
+            }
+            @media screen and (max-width: nth($breakpoint, 1)) {
+              font-size: 2rem;
+            }
+            div + div {
+              @media screen and (max-width: nth($breakpoint, 2)) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.subscribe {
+      width: calc(100% + 8rem);
+      margin-left: -4rem;
+      padding: 0 4rem;
+      background-color: lighten($color-warning, 40%);
+      @media screen and (max-width: nth($breakpoint, 3)) {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        padding: 5rem 1rem;
+      }
+      @media screen and (max-width: nth($breakpoint, 1)) {
+        padding: 0 1rem;
+      }
+      .subscribe__box {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        padding: 4rem 4rem 4rem 0;
+        max-width: nth($breakpoint, 5);
+        @media screen and (max-width: nth($breakpoint, 4)) {
+          padding: 4rem 0 1rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 1)) {
+          display: block;
+          padding: 0;
+        }
+      }
+      .subscribe-left {
+        width: 41.6666%;
+        @media screen and (max-width: nth($breakpoint, 1)) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          position: relative;
+          transform: translate3d(0, -25%, 0);
+          margin-bottom: -4rem;
+          @media screen and (max-width: nth($breakpoint, 1)) {
+            width: 50%;
+          }
+        }
+      }
+      .subscribe-right {
+        flex: 1;
+      }
+      .subscribe-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        @media screen and (max-width: nth($breakpoint, 2)) {
+         font-size: 2rem;
+        }
+        &+p {
+          font-size: 1.5rem;
+          @media screen and (max-width: nth($breakpoint, 2)) {
+            font-size: 1.25rem;
+          }
+        }
+      }
     }
   }
   .page-footer {
     flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 7.5rem;
+    border-top: 1px solid $border-color;
+    @media screen and (max-width: nth($breakpoint, 1)) {
+      display: block;
+    }
+    > div {
+      margin-bottom: 1rem;
+    }
+    .footer-logo {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      a {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }

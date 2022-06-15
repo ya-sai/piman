@@ -1,7 +1,14 @@
-.bpa-btn--circle {
+.#{$prefix}-btn--circle {
   border-radius: 50%;
   padding: 0;
   width: 3rem;
   height: 3rem;
   text-align: center;
+}
+
+.#{$prefix}-dropdown-popup {
+  a {
+    word-break: break-all;
+    word-break: break-word;
+  }
 }
