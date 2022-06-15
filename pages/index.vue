@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <a href="#ak-container" title="跳至主要內容" id="ak-jump">跳至主要內容</a>
-    <a href="#ak-header" title="menu group" id="ak-header" accesskey="U" name="ak-header">:::</a>
+    <a href="#ak-header" title="頁首資訊" id="ak-header" accesskey="U" name="ak-header">:::</a>
     <div class="page-header">
       <h1><nuxt-link to="/" title="Home page">Piman</nuxt-link></h1>
       <nav aria-label="Piman" class="menu">
@@ -209,6 +209,7 @@
     </div>
     <div class="page-footer">
       <div>
+        <a href="#ak-footer" title="頁腳資訊" id="ak-footer" accesskey="Z" name="ak-footer">:::</a>
         <div class="footer-logo"><nuxt-link to="/" title="回首頁">Piman</nuxt-link></div>
         <div><strong><a href="mailto:yasai@blueplanet.com.tw?subject=從 Landing Page 問問題" title="另開視窗填寫電子郵件" target="_blank" rel="noreferrer noopener">yasai@blueplanet.com.tw</a></strong></div>
         <br>
