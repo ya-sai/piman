@@ -132,7 +132,7 @@
               <bpa-accordion>
                 <bpa-accordion-item title="使用 Piman 之前，需要先了解甚麼知識嗎？">
                   <ul>
-                    <li><p>您必須熟讀 <a href="https://www.w3schools.com/html/" title="另開視窗前往 w3schools 查看 Html" target="_blank" rel="noreferrer noopener">HTML 字典</a> 與  <a href="https://www.w3schools.com/css/" title="另開視窗前往 w3schools 查看 CSS" target="_blank" rel="noreferrer noopener">CSS</a> 字典</p></li>
+                    <li><p>您必須熟讀 <a href="https://www.w3schools.com/html/" title="另開視窗前往 w3schools 查看 Html" target="_blank" rel="noreferrer noopener">HTML 字典</a> 與  <a href="https://www.w3schools.com/css/" title="另開視窗前往 w3schools 查看 CSS" target="_blank" rel="noreferrer noopener">CSS 字典</a></p></li>
                     <li><p>推薦至<a href="https://accessibility.ncc.gov.tw/" title="另開視窗前往無障礙網路空間服務網" target="_blank" rel="noreferrer noopener">無障礙網路空間服務網</a>熟讀各項無障礙網頁設計規範</p></li>
                     <li><p>您需要了解 WAI-ARIA 並謹記 WAI-ARIA 的宗旨為：<a href="https://www.w3.org/WAI/ARIA/apg/patterns/" title="另開視窗前往 w3schools 學習 WAI-ARIA" target="_blank" rel="noreferrer noopener">No ARIA is better than Bad ARIA</a>，這也意味著熟讀 HTML 字典與 CSS 字典。大概先暸解這三個，之後可以再慢慢擴充相關知識。</p></li>
                   </ul>

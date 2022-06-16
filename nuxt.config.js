@@ -28,7 +28,7 @@ export default {
       { hid: 'twitter:url', name: 'twitter:url', content: process.env.BASE_URL },
       { hid: 'twitter:title', name: 'twitter:title', content: process.env.WEBSITE_NAME},
       { hid: 'twitter:description', name: 'twitter:description', content: process.env.WEBSITE_DESCRIPTION},
-      { hid: 'twitter:image', name: 'twitter:image', content: process.env.BASE_URL + '/images/social-media.png'},
+      { hid: 'twitter:image', name: 'twitter:image', content: process.env.BASE_URL + 'images/social-media.png'},
 
       // 在手機上，加入主畫面的名稱
       // { name: 'mobile-web-app-capable', content: 'yes' },
