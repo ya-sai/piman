@@ -25,14 +25,14 @@
             <a class="bpa-btn bpa-btn--primary" href="https://piman.notion.site/How-to-Use-e14a8f80aa3d40859f16916bbd16aa9b" title="另開視窗前往快速開始頁面" target="_blank" rel="noreferrer noopener">快速開始</a>
             <a class="bpa-btn" href="https://github.com/ya-sai/piman" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">Github</a>
           </div>
-          <bpa-button class="bpa-btn--circle" style="display: flex;margin: 0 auto 0.5rem; align-items: center; justify-content: center;">
+          <!-- <bpa-button class="bpa-btn--circle" style="display: flex;margin: 0 auto 0.5rem; align-items: center; justify-content: center;">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Scroll Down Icon</title>
               <path d="M7.48182 11.8312L1.54795 5.89727C1.26177 5.61108 1.26177 5.1471 1.54795 4.86095L2.24004 4.16886C2.52574 3.88316 2.98877 3.88261 3.27514 4.16763L8 8.87035L12.7248 4.16763C13.0112 3.88261 13.4742 3.88316 13.7599 4.16886L14.452 4.86095C14.7382 5.14713 14.7382 5.61111 14.452 5.89727L8.51817 11.8312C8.23198 12.1173 7.76801 12.1173 7.48182 11.8312Z" fill="#222222"/>
             </svg>
             <span class="visually-hidden">Scroll Down</span>
-          </bpa-button>
-          往下捲動
+          </bpa-button> -->
+          <!-- 往下捲動 -->
         </section>
         <section class="intro" id="intro">
           <div class="deco-piman">
