@@ -20,7 +20,7 @@
             <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <h2>Piman</h2>
-          <p>一款聚焦於無障礙的開源 UI 框架。</p>
+          <p>一款聚焦於無障礙的 UI 框架。</p>
           <div style="margin-bottom: 7.5rem;">
             <a class="bpa-btn bpa-btn--primary" href="https://piman.notion.site/How-to-Use-e14a8f80aa3d40859f16916bbd16aa9b" title="另開視窗前往快速開始頁面" target="_blank" rel="noreferrer noopener">快速開始</a>
             <a class="bpa-btn" href="https://github.com/ya-sai/piman" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">Github</a>
@@ -60,7 +60,7 @@
           <div class="reasons__box">
             <div class="reasons-left">
               <div class="reasons-title">
-                應該使用符合無障礙網頁設計 UI 框架的其中 7 個理由<br/>
+                使用無障礙 UI 框架的 7 個理由<br/>
                 💪💪💪
               </div>
             </div>
@@ -68,14 +68,14 @@
               <ul class="reasons-list">
                 <li>
                   <div>不可能要求所有參與人員都學習無障礙網頁設計規範</div>
-                  <div>我們鼓勵越多人認識越好，但這是不切實際的。使用 Piman 就省下很多人的力氣與成本。</div>
+                  <div>越多人認識越好，但不切實際。使用 Piman 能省下很多成本。</div>
                 </li>
                 <li>
-                  <div>每次都要處理很多額外的東西</div>
+                  <div>每次都要處理很多額外的事件</div>
                   <div>例如：可點擊的地方無法使用鍵盤操作。</div>
                 </li>
                 <li>
-                  <div>使用的前端框架不符合無障礙網頁設計規範</div>
+                  <div>使用的 UI 框架、套件沒有支援無障礙網頁設計規範</div>
                   <div>可能必須修改原始碼，造成鎖死版本問題，亦或是額外使用暴力法...。</div>
                 </li>
                 <li>
@@ -84,15 +84,15 @@
                 </li>
                 <li>
                   <div>很大機率被退件 （臺灣 NCC 人工審核）</div>
-                  <div>增加專案被罰錢的風險（ 最好能談成維運時再通過無障礙標章，也比較合理 ）。</div>
+                  <div>增加專案被罰錢的風險（ 最好能談成維運時再通過無障礙標章，也比較合理，因為要在「正式上線」後才能申請檢測 ）。</div>
                 </li>
                 <li>
-                  <div>沒有認真研究的話，有需要的人會感到困擾</div>
+                  <div>沒有認真研究的話，真正有需要的人會感到困擾</div>
                   <div>原本是好意，結果使用起來變得更困擾。</div>
                 </li>
                 <li>
-                  <div>公司都應該需要一套 Design System</div>
-                  <div>既然如此，那何不順便讓網頁親和力變得更高呢！</div>
+                  <div>公司需要一套 Design System</div>
+                  <div>既然如此，順手讓網頁親和力變得更高！</div>
                 </li>
               </ul>
             </div>
@@ -102,13 +102,13 @@
           <div class="demo-left">
             <div class="demo-title">基於 Vue 2 設計</div>
             <ul>
-              <li>因為無障礙網頁設計有許多規範，所以Piman 使用前端框架 Vue 製作各種元件，讓開發者可以專注在優先度更高的事情上，不需因為無障礙網頁設計而煩惱。</li>
-              <li>選擇了 Vue 也相對其他框架好入門。</li>
+              <li>切版初學者最初大部分都會從 jQuery 學習，對於這些使用者來說， Vue 在技術面相對其他框架好上手（我們希望盡可能讓更多人使用 Piman）。</li>
+              <li>承上，無障礙網頁設計要注意許多技術、結構規範，若使用複製/貼上 html 等方式可能會遺漏細節或誤用，所以我們使用 Vue 製作元件，降低錯誤發生機率。</li>
               <li>為了良好的支援 IE11 ，選擇了 Vue 2。</li>
             </ul>
             <div class="cta">
               <div>Try Piman</div>
-              <div> ➡ ➡ ➡</div>
+              <div>➡➡➡</div>
             </div>
           </div>
           <div class="demo-right">
@@ -174,7 +174,7 @@
                 </a>
                 <div>
                   <div>Figma</div>
-                  <div>⬅ ⬅ ⬅</div>
+                  <div>⬅⬅⬅</div>
                 </div>
               </li>
               <li>
@@ -183,13 +183,13 @@
                 </a>
                 <div>
                   <div>Nuxt Template</div>
-                  <div>⬅ ⬅ ⬅</div>
+                  <div>⬅⬅⬅</div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
           <div class="subscribe__box">
             <div class="subscribe-left">
               <img src="images/subscribe-bg.svg" alt="">
@@ -197,11 +197,29 @@
             <div class="subscribe-right">
               <div class="subscribe-title">讓我們保持聯繫吧！</div>
               <p>Piman 會不定期分享無障礙網頁設計的資訊，歡迎訂閱！ 📰</p>
-                <label for="entry.1423896898">
-                  <bpa-input placeholder="請輸入電子郵件地址" id="entry.1423896898" name="entry.1423896898"/>
-                </label>
-                <br>
-                <bpa-button theme="primary">訂閱電子報</bpa-button>
+              <form name="reply-form" id="reply-gform" enctype="text/plain" method="get" action="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <input placeholder="想說些什麼呢？" name="entry.1423896898" id="entry.1423896898" required/>
+                <bpa-button theme="primary" type="submit" value="Submit">訂閱電子報</bpa-button>
+              </form>
+              <!-- <bpa-form :model="landingForm" ref="refLandingForm" :rules="landingFormRules">
+                <bpa-form-item
+                  label="請輸入電子郵件地址"
+                  required
+                  prop="subscriber"
+                  labelFor="entry.1423896898"
+                  @validate="onValidate"
+                >
+                  <bpa-input
+                    v-model="landingForm.subscriber"
+                    placeholder="範例：abc@gmail.com"
+                    id="entry.1423896898"
+                    name="entry.1423896898"
+                  />
+                  <br>
+                  <bpa-button theme="primary">訂閱電子報</bpa-button>
+               </bpa-form-item>
+              </bpa-form> -->
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             </div>
           </div>
         </section>
@@ -240,34 +258,58 @@ export default defineComponent({
 
     const menuValue = ref('')
     const menuOptions = [
-    { 
-      type: 'link',
-      url: '#intro',
-      label: '簡介',
-    },
-    { 
-      type: 'link',
-      url: '#reasons',
-      label: '為什麼選擇 Piman',
-    },
-    { 
-      type: 'link',
-      url: '#demo',
-      label: '範例',
-    },
-    { 
-      type: 'link',
-      url: '#faq',
-      label: '常見問答',
-    },
-    { 
-      type: 'link',
-      url: '#resources',
-      label: '資源下載',
-    },
-  ]
+      { 
+        type: 'link',
+        url: '#intro',
+        label: '簡介',
+      },
+      { 
+        type: 'link',
+        url: '#reasons',
+        label: '為什麼選擇 Piman',
+      },
+      { 
+        type: 'link',
+        url: '#demo',
+        label: '範例',
+      },
+      { 
+        type: 'link',
+        url: '#faq',
+        label: '常見問答',
+      },
+      { 
+        type: 'link',
+        url: '#resources',
+        label: '資源下載',
+      },
+      { 
+        type: 'link',
+        url: '#subscribe',
+        label: '訂閱電子報',
+      },
+    ]
+
+    // const errPrivate = ref('')
+
+    // const landingForm =  {
+    //   subscriber: "",
+    // }
+
+    // const landingFormRules = {
+    //   subscriber: [
+    //     { required: true, message: "請輸入電子郵件" },
+    //     {
+    //       max: 120,
+    //       message: "最多 120 個字",
+    //       trigger: "change",
+    //     },
+    //   ],
+    // }
+
     return {
-      menuValue, menuOptions
+      menuValue, menuOptions,
+      // errPrivate, landingForm, landingFormRules
     }
   },
 })

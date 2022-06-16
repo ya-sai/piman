@@ -46,12 +46,12 @@
     }
   }
   .page-header {
+    position: sticky;
+    top: -3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 4rem;
-    position: sticky;
-    top: 0;
     z-index: 1;
     @media screen and (max-width: nth($breakpoint, 2)) {
       padding-top: 1rem;
