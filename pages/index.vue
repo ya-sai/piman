@@ -197,28 +197,15 @@
             <div class="subscribe-right">
               <div class="subscribe-title">讓我們保持聯繫吧！</div>
               <p>Piman 會不定期分享無障礙網頁設計的資訊，歡迎訂閱！ 📰</p>
-              <form name="reply-form" id="reply-gform" enctype="text/plain" method="get" action="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                <input placeholder="想說些什麼呢？" name="entry.1423896898" id="entry.1423896898" required/>
-                <bpa-button theme="primary" type="submit" value="Submit">訂閱電子報</bpa-button>
+              <form name="replyForm" id="replyForm" enctype="text/plain" method="get" action="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" @submit="onSubmitFrom()">
+                <label for="entry.1423896898">
+                  <div name="entry.1423896898" class="bpa-input-box">
+                    <input v-model="replyFormInput" id="entry.1423896898" placeholder="請輸入電子郵件地址" name="entry.1423896898" class="bpa-input" type="email" required>
+                  </div>
+                </label>
+                <br>
+                <bpa-button theme="primary" type="submit" value="Submit" onclick="setTimeout(function(){document.replyForm.reset();})">訂閱電子報</bpa-button>
               </form>
-              <!-- <bpa-form :model="landingForm" ref="refLandingForm" :rules="landingFormRules">
-                <bpa-form-item
-                  label="請輸入電子郵件地址"
-                  required
-                  prop="subscriber"
-                  labelFor="entry.1423896898"
-                  @validate="onValidate"
-                >
-                  <bpa-input
-                    v-model="landingForm.subscriber"
-                    placeholder="範例：abc@gmail.com"
-                    id="entry.1423896898"
-                    name="entry.1423896898"
-                  />
-                  <br>
-                  <bpa-button theme="primary">訂閱電子報</bpa-button>
-               </bpa-form-item>
-              </bpa-form> -->
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             </div>
           </div>
@@ -290,26 +277,18 @@ export default defineComponent({
       },
     ]
 
-    // const errPrivate = ref('')
+    const replyFormInput = ref('')
 
-    // const landingForm =  {
-    //   subscriber: "",
-    // }
-
-    // const landingFormRules = {
-    //   subscriber: [
-    //     { required: true, message: "請輸入電子郵件" },
-    //     {
-    //       max: 120,
-    //       message: "最多 120 個字",
-    //       trigger: "change",
-    //     },
-    //   ],
-    // }
+    function onSubmitFrom() {
+      (root as any).$msg.success({
+        prefix: '✔',
+        msg: '成功訂閱，感謝您關注無障礙網頁設計！',
+      })
+    }
 
     return {
       menuValue, menuOptions,
-      // errPrivate, landingForm, landingFormRules
+      replyFormInput, onSubmitFrom
     }
   },
 })

@@ -498,15 +498,19 @@
       .subscribe__box {
         display: flex;
         position: relative;
-        margin: 0 auto;
-        padding: 4rem 4rem 4rem 0;
+        margin: 0 auto -6rem;
+        padding: 4rem 4rem 0 0;
         max-width: nth($breakpoint, 5);
         @media screen and (max-width: nth($breakpoint, 4)) {
           padding: 4rem 0 1rem;
         }
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          margin-bottom: -4rem;
+        }
         @media screen and (max-width: nth($breakpoint, 1)) {
           display: block;
           padding: 0;
+          margin-bottom: 0rem;
         }
       }
       .subscribe-left {
