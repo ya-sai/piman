@@ -70,15 +70,15 @@
       text-align: center;
       height: 337px;
       margin-bottom: 4rem;
-      @media screen and (max-width: nth($breakpoint, 3)) {
-        height: 260px;
-      }
+      // @media screen and (max-width: nth($breakpoint, 3)) {
+      //   height: 260px;
+      // }
       @media screen and (max-width: nth($breakpoint, 2)) {
         height: 140px;
       }
-      @media screen and (max-width: nth($breakpoint, 1)) {
-        height: 100px;
-      }
+      // @media screen and (max-width: nth($breakpoint, 1)) {
+      //   height: 100px;
+      // }
       img[class*="deco-piman-"] {
         position: absolute;
         top: 0;
@@ -87,15 +87,15 @@
         max-height: 337px;
         width: auto;
         object-fit: contain;
-        @media screen and (max-width: nth($breakpoint, 3)) {
-          max-height: 260px;
-        }
+        // @media screen and (max-width: nth($breakpoint, 3)) {
+        //   max-height: 260px;
+        // }
         @media screen and (max-width: nth($breakpoint, 2)) {
           max-height: 140px;
         }
-        @media screen and (max-width: nth($breakpoint, 1)) {
-          max-height: 100px;
-        }
+        // @media screen and (max-width: nth($breakpoint, 1)) {
+        //   max-height: 100px;
+        // }
       }
     }
     &.hero {
@@ -123,13 +123,26 @@
       padding-bottom: 7.5rem;
       text-align: center;
       .deco-piman {
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          max-height: 240px;
+        }
         img.deco-piman-red {
           transform: translate3d(30%, 0, 0) rotate3d(0, 0, 1, 15deg);
-       
         }
         img.deco-piman-green {
           transform: translate3d(-130%, 0, 0) rotate3d(0, 0, 1, -15deg);
-       
+        }
+        
+        img[class*="deco-piman-"] {
+          @media screen and (max-width: nth($breakpoint, 3)) {
+            max-height: 240px;
+          }
+          @media screen and (max-width: nth($breakpoint, 2)) {
+            max-height: 140px;
+          }
+          @media screen and (max-width: nth($breakpoint, 1)) {
+            max-height: 100px;
+          }
         }
       }
       
