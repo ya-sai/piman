@@ -112,12 +112,15 @@
             </div>
           </div>
           <div class="demo-right">
-            <iframe src="https://codesandbox.io/embed/piman-form-klm4on?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark"
+            <!-- <iframe src="https://codesandbox.io/embed/piman-form-klm4on?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark"
               style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
               title="Piman-Form"
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-            ></iframe>
+            ></iframe> -->
+            <a href="https://piman.notion.site/Accordion-4b98f115da2b45b3b4fa87dac8cd9588" title="另開視窗前往 piman demo" target="_blank" rel="noreferrer noopener">
+              <img src="images/demo.webp" alt="piman demo 示意圖">
+            </a>
           </div>
         </section>
         <section class="faq" id="faq">

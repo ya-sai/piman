@@ -276,6 +276,7 @@
       width: calc(100% + 8rem);
       padding: 7.5rem 4rem;
       background-color: $color-white;
+      align-items: center;
       @media screen and (max-width: nth($breakpoint, 3)) {
         display: block;
         margin-left: -1rem;
@@ -323,9 +324,17 @@
       }
       .demo-right {
         flex: 1;
-        @media screen and (max-width: nth($breakpoint, 3)) {
-          height: 100vh;
-          height: 100dvh;
+        // @media screen and (max-width: nth($breakpoint, 3)) {
+        //   height: 100vh;
+        //   height: 100dvh;
+        // }
+        a {
+          display: block;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
       }
       .demo-title {
