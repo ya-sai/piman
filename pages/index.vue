@@ -36,8 +36,8 @@
         </section>
         <section class="intro" id="intro">
           <div class="deco-piman">
-            <img src="images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
             <img src="images/piman-yellow.svg" alt="" class="deco-piman-yellow" loading="lazy">
+            <img src="images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
             <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <div class="intro-title">
