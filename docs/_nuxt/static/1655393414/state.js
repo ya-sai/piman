@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fpiman\u002F_nuxt\u002Fstatic\u002F1655393414",layout:"landingpage",error:a,serverRendered:true,routePath:"\u002F",config:{baseURL:"https:\u002F\u002Fya-sai.github.io\u002Fpiman\u002F",_app:{basePath:"\u002Fpiman\u002F",assetsPath:"\u002Fpiman\u002F_nuxt\u002F",cdnURL:a}},globalRefs:{}}}(null));

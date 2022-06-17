@@ -9,7 +9,7 @@
           v-model="menuValue"
           :options="menuOptions"
           placeholder="選單"
-        />
+        ></bpa-dropdown>
       </nav>
     </div>
     <div class="page-container">
@@ -20,7 +20,7 @@
             <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <h2>Piman</h2>
-          <p>一款聚焦於無障礙的 UI 框架。</p>
+          <p>為無障礙而生的 UI 框架<br>無障礙，讓你我都被世界善待</p>
           <div style="margin-bottom: 7.5rem;">
             <a class="bpa-btn bpa-btn--primary" href="https://piman.notion.site/How-to-Use-e14a8f80aa3d40859f16916bbd16aa9b" title="另開視窗前往快速開始頁面" target="_blank" rel="noreferrer noopener">快速開始</a>
             <a class="bpa-btn" href="https://github.com/ya-sai/piman" title="另開視窗前往 Github" target="_blank" rel="noreferrer noopener">Github</a>
@@ -60,39 +60,38 @@
           <div class="reasons__box">
             <div class="reasons-left">
               <div class="reasons-title">
-                使用無障礙 UI 框架的 7 個理由<br/>
-                💪💪💪
+                為什麼你要使用無障礙 UI  Framework<br>
+                🥺
               </div>
             </div>
             <div class="reasons-right">
               <ul class="reasons-list">
                 <li>
-                  <div>不可能要求所有參與人員都學習無障礙網頁設計規範</div>
-                  <div>越多人認識越好，但不切實際。使用 Piman 能省下很多成本。</div>
+                  <div>快速創造出友善的網頁</div>
+                  <div>使用Piman 幫你分攤掉學習無障礙設計與開發的成本。</div>
                 </li>
                 <li>
-                  <div>每次都要處理很多額外的事件</div>
-                  <div>例如：可點擊的地方無法使用鍵盤操作。</div>
+                  <div>讓更多用戶在更多的情況下適用</div>
+                  <div>WTO 統計全球已有超過 10% 以上的人有一定程度的身心障礙，這些人的需求在開發時都應該要被考慮進去，才能真正的落實 Design for all。</div>
                 </li>
                 <li>
-                  <div>使用的 UI 框架、套件沒有支援無障礙網頁設計規範</div>
-                  <div>可能必須修改原始碼，造成鎖死版本問題，亦或是額外使用暴力法...。</div>
+                  <div>符合無障礙網頁設計規範的 UI 框架與套件並不多</div>
+                  <div>大多框架、套件必須修改程式原始碼，容易造成版本鎖死、維護不易的問題，為了效率使用套件卻還是要花時間暴力破解⋯⋯。</div>
                 </li>
                 <li>
-                  <div>每次機器掃描後心都很累（臺灣 NCC freego 軟體）</div>
-                  <div>團隊內如果沒有人特別學習，就會出現改得很煩、不知道解法、團隊氣氛糟糟的情況。</div>
+                  <div>減少取得 無障礙標章 的困難度</div>
+                  <div>
+                    政府或是公家機構專案會有要求網頁取得無障礙標章，機器審查與人工審查的要點繁瑣，團隊內若沒有無障礙背景知識，將有很大的機率被退件，也可能造成專案進度的 delay。<br><br>
+                    我們建議案子維運時再取得無障礙標章，因為此標章需在網站「正式上線」後才能申請檢測。
+                  </div>
                 </li>
                 <li>
-                  <div>很大機率被退件 （臺灣 NCC 人工審核）</div>
-                  <div>增加專案被罰錢的風險（ 最好能談成維運時再通過無障礙標章，也比較合理，因為要在「正式上線」後才能申請檢測 ）。</div>
+                  <div>擁有更好的使用體驗</div>
+                  <div>透過無障礙設計來落實以使用者為中心，將更多用戶的需求納入考慮。</div>
                 </li>
                 <li>
-                  <div>沒有認真研究的話，真正有需要的人會感到困擾</div>
-                  <div>原本是好意，結果使用起來變得更困擾。</div>
-                </li>
-                <li>
-                  <div>公司需要一套 Design System</div>
-                  <div>既然如此，順手讓網頁親和力變得更高！</div>
+                  <div>我需要一套 Design System</div>
+                  <div>設計團隊透過 Design System 能更快速地完成設計並進行管理，既然如此，那我們就使用 Piman 順手提高一下網站親和力吧 😏</div>
                 </li>
               </ul>
             </div>
@@ -102,9 +101,9 @@
           <div class="demo-left">
             <div class="demo-title">基於 Vue 2 設計</div>
             <ul>
-              <li>切版初學者最初大部分都會從 jQuery 學習，對於這些使用者來說， Vue 在技術面相對其他框架好上手（我們希望盡可能讓更多人使用 Piman）。</li>
-              <li>承上，無障礙網頁設計要注意許多技術、結構規範，若使用複製/貼上 html 等方式可能會遺漏細節或誤用，所以我們使用 Vue 製作元件，降低錯誤發生機率。</li>
-              <li>為了良好的支援 IE11 ，選擇了 Vue 2。</li>
+              <li>我們希望盡可能讓更多人使用 Piman，而對無障礙學習者與切版新手來說， Vue 在技術面上成熟且相對其他框架好上手。</li>
+              <li>無障礙網頁設計要注意許多技術、結構規範，複製/貼上 html 等方式可能會遺漏細節或誤用，因此我們決定使用 Vue 來製作元件，希望降低錯誤發生機率。</li>
+              <li>同時為考慮 IE11 的良好支援 ，選擇了 Vue 2來進行開發。</li>
             </ul>
             <div class="cta">
               <div>Try Piman</div>
