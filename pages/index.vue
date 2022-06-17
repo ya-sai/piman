@@ -43,7 +43,7 @@
             <img src="images/piman-red.svg" alt="" class="deco-piman-red" loading="lazy">
             <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
-          <div class="intro-title">
+          <h3 class="intro-title">
             <a href="#intro" title="簡介">
               <span aria-hidden="true">
                 <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
               </span>
             </a>
             <div>Accessibility</div><div>Design System</div><div>UI Freamework</div>
-          </div>
+          </h3>
           <p>
             👉 近年來「以使用者為中心」的概念已深植人心，
             而這股力量也開始擴散至無障礙網頁設計領域，
@@ -78,10 +78,10 @@
                   </svg>
                 </span>
               </a>
-              <div class="reasons-title">
+              <h3 class="reasons-title">
                 為什麼你要使用無障礙 UI  Framework<br>
                 🥺
-              </div>
+              </h3>
             </div>
             <div class="reasons-right">
               <ul class="reasons-list">
@@ -126,7 +126,7 @@
                 </svg>
               </span>
             </a>
-            <div class="demo-title">基於 Vue 2 設計</div>
+            <h3 class="demo-title">基於 Vue 2 設計</h3>
             <ul>
               <li>我們希望盡可能讓更多人使用 Piman，而對無障礙學習者與切版新手來說， Vue 在技術面上成熟且相對其他框架好上手。</li>
               <li>無障礙網頁設計要注意許多技術、結構規範，複製/貼上 html 等方式可能會遺漏細節或誤用，因此我們決定使用 Vue 來製作元件，希望降低錯誤發生機率。</li>
@@ -154,7 +154,7 @@
                   </svg>
                 </span>
               </a>
-              <div class="faq-title">FAQ</div>
+              <h3 class="faq-title">FAQ</h3>
             </div>
             <div class="faq-right">
               <bpa-accordion>
@@ -194,7 +194,7 @@
         </section>
         <section class="resources" id="resources">
           <div class="resources__box">
-            <div class="resources-title">
+            <h3 class="resources-title">
               <a href="#resources" title="資源下載">
                 <span aria-hidden="true">
                   <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@
               </a>
               <img src="images/resources-bg.svg" alt="">
               Resources
-            </div>
+            </h3>
             <ul class="resources-list">
               <li>
                 <a href="https://www.figma.com/community/file/1107940884755373211" title="另開視窗前往 piman figma community" target="_blank" rel="noreferrer noopener">
@@ -218,7 +218,7 @@
               </li>
               <li>
                 <a href="https://github.com/ya-sai/paprika" title="另開視窗前往 piman nuxt template-paprika" target="_blank" rel="noreferrer noopener">
-                  <img src="images/paprika-thumbnail.webp" alt="">
+                  <img src="images/paprika-thumbnail.webp" alt="Nuxt template 縮圖">
                 </a>
                 <div>
                   <div>Nuxt Template</div>
@@ -234,7 +234,7 @@
               <img src="images/subscribe-bg.svg" alt="">
             </div>
             <div class="subscribe-right">
-              <div class="subscribe-title">
+              <h3 class="subscribe-title">
                 <a href="#subscribe" title="資源下載">
                   <span aria-hidden="true">
                     <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -244,7 +244,7 @@
                   </span>
                 </a>
                 讓我們保持聯繫吧！
-              </div>
+              </h3>
               <iframe title="訂閱 Piman 電子報表單" src="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%;height: 500px;">載入中…</iframe>
             </div>
           </div>
