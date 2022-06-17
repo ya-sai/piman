@@ -52,7 +52,9 @@
                 </svg>
               </span>
             </a>
-            <div>Accessibility</div><div>Design System</div><div>UI Freamework</div>
+            <div>Accessibility</div>
+            <div>Design System</div>
+            <div>UI Framework</div>
           </h3>
           <p>
             👉 近年來「以使用者為中心」的概念已深植人心，
