@@ -5,11 +5,14 @@
     <div class="page-header">
       <h1><nuxt-link to="/" title="Home page">Piman</nuxt-link></h1>
       <nav aria-label="Piman" class="menu">
-        <bpa-dropdown
-          v-model="menuValue"
-          :options="menuOptions"
-          placeholder="選單"
-        ></bpa-dropdown>
+        <ul>
+          <li><a href="#intro" title="跳至簡介">簡介</a></li>
+          <li><a href="#reasons" title="跳至為何使用">為何使用</a></li>
+          <li><a href="#demo" title="跳至範例">範例</a></li>
+          <li><a href="#faq" title="跳至常見問答">常見問答</a></li>
+          <li><a href="#resources" title="跳至資源下載">下載</a></li>
+          <li><a href="#subscribe" title="跳至訂閱電子報">訂閱</a></li>
+        </ul>
       </nav>
     </div>
     <div class="page-container">
@@ -41,6 +44,14 @@
             <img src="images/piman-green.svg" alt="" class="deco-piman-green" loading="lazy">
           </div>
           <div class="intro-title">
+            <a href="#intro" title="簡介">
+              <span aria-hidden="true">
+                <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                  <title>簡介 icon</title>
+                  <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                </svg>
+              </span>
+            </a>
             <div>Accessibility</div><div>Design System</div><div>UI Freamework</div>
           </div>
           <p>
@@ -59,6 +70,14 @@
         <section class="reasons" id="reasons">
           <div class="reasons__box">
             <div class="reasons-left">
+              <a href="#reasons" title="為什麼你要使用無障礙 UI Framework">
+                <span aria-hidden="true">
+                  <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <title>為什麼你要使用無障礙 UI Framework 連結 icon</title>
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                  </svg>
+                </span>
+              </a>
               <div class="reasons-title">
                 為什麼你要使用無障礙 UI  Framework<br>
                 🥺
@@ -99,6 +118,14 @@
         </section>
         <section class="demo" id="demo">
           <div class="demo-left">
+            <a href="#demo" title="基於 Vue 2 設計">
+              <span aria-hidden="true">
+                <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                  <title>基於 Vue 2 設計 連結 icon</title>
+                  <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                </svg>
+              </span>
+            </a>
             <div class="demo-title">基於 Vue 2 設計</div>
             <ul>
               <li>我們希望盡可能讓更多人使用 Piman，而對無障礙學習者與切版新手來說， Vue 在技術面上成熟且相對其他框架好上手。</li>
@@ -119,6 +146,14 @@
         <section class="faq" id="faq">
           <div class="faq__box">
             <div class="faq-left">
+              <a href="#faq" title="常見問答">
+                <span aria-hidden="true">
+                  <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <title>常見問答 連結 icon</title>
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                  </svg>
+                </span>
+              </a>
               <div class="faq-title">FAQ</div>
             </div>
             <div class="faq-right">
@@ -160,6 +195,14 @@
         <section class="resources" id="resources">
           <div class="resources__box">
             <div class="resources-title">
+              <a href="#resources" title="資源下載">
+                <span aria-hidden="true">
+                  <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <title>資源下載 連結 icon</title>
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                  </svg>
+                </span>
+              </a>
               <img src="images/resources-bg.svg" alt="">
               Resources
             </div>
@@ -191,8 +234,18 @@
               <img src="images/subscribe-bg.svg" alt="">
             </div>
             <div class="subscribe-right">
-              <div class="subscribe-title">讓我們保持聯繫吧！</div>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%;height: 500px;">載入中…</iframe>
+              <div class="subscribe-title">
+                <a href="#subscribe" title="資源下載">
+                  <span aria-hidden="true">
+                    <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                      <title>資源下載 連結 icon</title>
+                      <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill="currentcolor"></path>
+                    </svg>
+                  </span>
+                </a>
+                讓我們保持聯繫吧！
+              </div>
+              <iframe title="訂閱 Piman 電子報表單" src="https://docs.google.com/forms/d/e/1FAIpQLScsA7ZXQHWHU2pWEM7jiL0kjVzqCJg1djOsuMao3f84B7neMQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%;height: 500px;">載入中…</iframe>
             </div>
           </div>
         </section>

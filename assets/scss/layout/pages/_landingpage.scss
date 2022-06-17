@@ -15,27 +15,61 @@
     }
   }
   .menu {
-    .#{$prefix}-btn {
-      position: relative;
-      background-color: transparent;
-      color: $color-black;
-      border: 0;
-      font-size: 1.5rem;
-      line-height: 1;
-      font-weight: bold;
-      padding: 0 0 0.5rem 0;
-      &:after {
-        display: none;
+    ul {
+      display: flex;
+      padding: 0 0.5rem;
+      background-image: 
+
+      /* Shadows */ 
+      linear-gradient(to right, lighten($color-warning, 40%), lighten($color-warning, 40%)),
+      linear-gradient(to right, lighten($color-warning, 40%), lighten($color-warning, 40%)),
+      
+      /* Shadow covers */ 
+      linear-gradient(to right, rgba(darken($color-warning, 10%),.25), rgba(darken($color-warning, 10%),0)),
+      linear-gradient(to left, rgba(darken($color-warning, 10%),.25), rgba(darken($color-warning, 10%),0));   
+
+      background-position: left center, right center, left center, right center;
+      background-repeat: no-repeat;
+      background-color: lighten($color-warning, 40%);
+      background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+      
+      /* Opera doesn't support this in the shorthand */
+      background-attachment: local, local, scroll, scroll;
+      @media screen and (max-width: nth($breakpoint, 2)) {
+        display: block;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar  {
+          display: none;
+        }
       }
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        height: 0.1875rem;
-        border-radius: 0.09375rem;
-        background-color: $color-black;
+    }
+    li {
+      @media screen and (max-width: nth($breakpoint, 2)) {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0.5rem 0;
+      }
+      a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-black;
+        padding: 0 0.5rem;
+        &:focus {
+          box-shadow: 0 0 0 3px $color-black;
+        }
+        @media screen and (max-width: nth($breakpoint, 4)) {
+          font-size: 1.25rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 3)) {
+          padding: 0.25rem 0.5rem;
+        }
+        @media screen and (max-width: nth($breakpoint, 2)) {
+          font-size: 1rem;
+          padding: 0.25rem 0.5rem;
+        }
       }
     }
   }
@@ -54,14 +88,16 @@
     margin-left: -4rem;
     width: calc(100% + 8rem);
     padding: 4rem 4rem 1rem;
-    z-index: 1;
-    background-color: rgba(lighten($color-warning, 40%), 0.6);
-    backdrop-filter: blur(0.25rem);
+    z-index: 2;
+    background-color: lighten($color-warning, 40%);
     @media screen and (max-width: nth($breakpoint, 3)) {
       margin-left: -1rem;
       width: calc(100% + 2rem);
       top: 0;
       padding: 1rem;
+    }
+    @media screen and (max-width: nth($breakpoint, 2)) {
+      display: block;
     }
   }
   section {
@@ -440,6 +476,7 @@
         right: 140px;
         font-size: 3rem;
         font-weight: bold;
+        z-index: 1;
         @media screen and (max-width: nth($breakpoint, 4)) {
           top: 7.5rem;
           right: 7.5rem;
