@@ -32,7 +32,9 @@
           @focus="clearTimer"
           @blur="startTimer"
           class="close-msg"
-        >✖<span class="visually-hidden">{{ t('msg.close') }}</span>
+        >
+          <span aria-hidden="true">✖</span>
+          <span class="visually-hidden">{{ t('msg.close') }}</span>
         </button>
       </div>
     </div>
