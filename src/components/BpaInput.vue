@@ -47,7 +47,9 @@
         @keydown.stop.prevent.enter="handleClearInput"
         @keydown.stop.prevent.space="handleClearInput"
         class="bpa-input-clear-btn"
-      >✖<span class="visually-hidden">{{ t('input.clear') }}</span>
+      >
+        <span aria-hidden="true">✖</span>
+        <span class="visually-hidden">{{ t('input.clear') }}</span>
       </div>
     </template>
     <textarea

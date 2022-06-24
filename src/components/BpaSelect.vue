@@ -61,7 +61,9 @@
         @keydown.stop.prevent.enter="handleClearSelected"
         @keydown.stop.prevent.space="handleClearSelected"
         class="bpa-select-clear-btn"
-      >✖<span class="visually-hidden">{{ t('select.clear') }}</span>
+      >
+        <span aria-hidden="true">✖</span>
+        <span class="visually-hidden">{{ t('select.clear') }}</span>
       </div>
     </bpa-button>
     <ul

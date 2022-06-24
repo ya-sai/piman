@@ -27,7 +27,10 @@
               type="button"
               class="bpa-dialog-close-btn"
               @click="handleCloseBpaDialog"
-            >✖<span class="visually-hidden">{{ t('dialog.close') }}</span></bpa-button>
+            >
+              <span aria-hidden="true">✖</span>
+              <span class="visually-hidden">{{ t('dialog.close') }}</span>
+            </bpa-button>
           </div>
           <div class="bpa-dialog-container">
             <slot></slot>
