@@ -14,8 +14,11 @@
       }
     }
     &[aria-checked="true"] {
-      background-color: lighten($color-primary, 10%);
+      background-color: $color-primary;
       transition: background-color 160ms ease-in;
+      .#{$prefix}-switch-text--close {
+        color: $color-white;
+      }
       .#{$prefix}-switch-text--open {
         background-color: $color-white;
       }
