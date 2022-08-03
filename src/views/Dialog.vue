@@ -31,6 +31,11 @@
                 v-model="value2"
                 :options=options
               />
+              <bpa-input
+                v-model="value"
+                type="password"
+                placeholder="這是密碼"
+              />
             </div>
             <template v-slot:footer>
               <bpa-button @click="onBuy">購買</bpa-button>
