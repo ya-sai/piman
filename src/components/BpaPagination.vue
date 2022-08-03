@@ -47,7 +47,10 @@
               :size=size
               @click="handleClickPager(1)"
             >
-              <slot name="first-page-text">⇤<span class="visually-hidden">{{ t('pagination.first_page_text') }}</span></slot>
+              <slot name="first-page-text">
+                <span aria-hidden="true">⇤</span>
+                <span class="visually-hidden">{{ t('pagination.first_page_text') }}</span>
+              </slot>
             </bpa-button>
           </li>
           <li class="prev">
@@ -58,7 +61,10 @@
               :size=size
               @click="handleClickPager(prevPage)"
             >
-              <slot name="prev-page-text">⇠<span class="visually-hidden">{{ t('pagination.prev_page_text') }}</span></slot>
+              <slot name="prev-page-text">
+                <span aria-hidden="true">⇠</span>
+                <span class="visually-hidden">{{ t('pagination.prev_page_text') }}</span>
+              </slot>
             </bpa-button>
           </li>
           <li 
@@ -85,7 +91,10 @@
               :size=size
               @click="handleClickPager(nextPage)"
             >
-              <slot name="next-page-text">⇢<span class="visually-hidden">{{ t('pagination.next_page_text') }}</span></slot>
+              <slot name="next-page-text">
+                <span aria-hidden="true">⇢</span>
+                <span class="visually-hidden">{{ t('pagination.next_page_text') }}</span>
+              </slot>
             </bpa-button>
           </li>
           <li
@@ -99,7 +108,10 @@
               :size=size
               @click="handleClickPager(totalPages)"
             >
-              <slot name="last-page-text">⇥<span class="visually-hidden">{{ t('pagination.last_page_text') }}</span></slot>
+              <slot name="last-page-text">
+                <span aria-hidden="true">⇥</span>
+                <span class="visually-hidden">{{ t('pagination.last_page_text') }}</span>
+              </slot>
             </bpa-button>
           </li>
         </ul>
