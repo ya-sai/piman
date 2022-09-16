@@ -24,7 +24,7 @@
     box-shadow: 0 0 0 3px $outline-color;
   }
   &.#{$prefix}-input-box--danger {
-    border-color: $color-danger;
+    border: 1px dashed $color-danger;
   }
   &.#{$prefix}-input-box--small {
     padding: 0.25rem 0.5rem;

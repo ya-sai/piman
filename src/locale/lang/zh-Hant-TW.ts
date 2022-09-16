@@ -29,7 +29,8 @@ const translation: Translation = {
   },
   "dropdown":{
     "goto":"前往",
-    "new_tab":"另開視窗前往"
+    "new_tab":"另開視窗前往",
+    "placeholder": "選擇執行動作",
   },
   "input":{
     "show":"點擊顯示密碼",

@@ -26,7 +26,7 @@
     .#{$prefix}-btn,
     .#{$prefix}-eadio-input[type="radio"],
     .#{$prefix}-checkbox-input[type="checkbox"] {
-      border-color: $color-danger;
+       border: 1px dashed $color-danger;
     }
   }
 }

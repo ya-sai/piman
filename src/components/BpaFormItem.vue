@@ -29,7 +29,7 @@
         <span
           :role="innerError ? 'alert' : ''"
           :aria-atomic="innerError  ? true : false"
-        >{{ innerHint }}</span>
+        >⚠ {{ innerHint }}</span>
       </div>
     </div>
   </div>

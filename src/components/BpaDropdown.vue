@@ -20,7 +20,8 @@
     >
       <slot name="prefix"></slot>
       <span class="bpa-dropdown-text" :id="`${fixId}-label-text`">
-        <span>{{ placeholder }}</span>
+        <span v-if="placeholder">{{ placeholder }}</span>
+        <span v-else>{{ t('dropdown.placeholder') }}</span>
       </span>
       <slot name="affix"></slot>
     </bpa-button>
@@ -90,7 +91,6 @@ export default Vue.extend({
     },
     placeholder: {
       type: String,
-      required: true,
     },
     fixed: String,
     optionWidth: String,

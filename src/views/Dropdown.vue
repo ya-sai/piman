@@ -8,7 +8,6 @@
           <bpa-dropdown
             v-model="value"
             :options="options"
-            placeholder="執行動作"
             size="small"
             @click="onClick"
             listboxClass="abc"
@@ -16,13 +15,11 @@
           <bpa-dropdown
             v-model="value"
             :options="options"
-            placeholder="執行動作"
             @click="onClick"
           />
           <bpa-dropdown
             v-model="value"
             :options="options"
-            placeholder="執行動作"
             size="large"
             @click="onClick"
           />
