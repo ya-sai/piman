@@ -29,7 +29,8 @@ const translation: Translation = {
   },
   "dropdown":{
     "goto":"Go to",
-    "new_tab":"Open new tab to"
+    "new_tab":"Open new tab to",
+    "placeholder": "select",
   },
   "input":{
     "show":"show password",
