@@ -7,6 +7,7 @@
     >
       <slot></slot>
     </router-link>
+    <slot v-else></slot>
   </li>
 </template>
 <script>
