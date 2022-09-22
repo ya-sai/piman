@@ -27,7 +27,7 @@ export default Vue.extend({
       path: [
         { title: '🏠首頁', url: '/'},
         { title: '表單範例',  url: '/formvalidate'},
-        { title: '現在頁面',  url: '/breadcrumb'},
+        { title: '現在頁面'},
       ]
     }
   },
