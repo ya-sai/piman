@@ -1,6 +1,5 @@
 <template>
   <div
-    aria-multiselectable="false"
     class="bpa-tabs"
   >
     <ul
