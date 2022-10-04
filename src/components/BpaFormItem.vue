@@ -28,6 +28,7 @@
       >
         <span
           :role="innerError ? 'alert' : ''"
+          aria-live="assertive"
           :aria-atomic="innerError  ? true : false"
         >⚠ {{ innerHint }}</span>
       </div>
