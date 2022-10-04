@@ -21,6 +21,12 @@
           <bpa-button theme="danger-ghost">警告</bpa-button>
         </section>
         <section>
+          <h3>搭配 icon</h3>
+          <bpa-button theme="primary">
+            <span aria-hidden="true">😃</span>如果 icon 是純裝飾，在螢幕報讀時隱藏
+          </bpa-button>
+        </section>
+        <section>
           <h3>停用</h3>
           <bpa-button disabled>預設按鈕</bpa-button>
           <bpa-button theme="primary" disabled>主題色</bpa-button>
