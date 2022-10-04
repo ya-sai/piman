@@ -10,6 +10,7 @@
       :theme="theme"
       aria-haspopup="listbox"
       :aria-expanded="listboxOpen ? 'true' : 'false'"
+      :aria-controls="`${fixId}-listbox`"
       :disabled="disabled"
       :size="size"
       @click="handleClickSelect"
@@ -22,10 +23,12 @@
       <span class="bpa-dropdown-text" :id="`${fixId}-label-text`">
         <span v-if="placeholder">{{ placeholder }}</span>
         <span v-else>{{ t('dropdown.placeholder') }}</span>
+        <span class="visually-hidden">{{ t('dropdown.hint') }}</span>
       </span>
       <slot name="affix"></slot>
     </bpa-button>
     <ul
+      :id="`${fixId}-listbox`"
       role="listbox"
       ref="refBpaDropList"
       tabindex="-1"

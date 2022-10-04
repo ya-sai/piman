@@ -31,6 +31,7 @@ const translation: Translation = {
     "goto":"Go to",
     "new_tab":"Open new tab to",
     "placeholder": "select",
+    "hint":"Using TAB select options"
   },
   "input":{
     "show":"show password",
@@ -46,7 +47,8 @@ const translation: Translation = {
     "placeholder": "select",
     "clear":"clear",
     "search":"search",
-    "area_search":"enter a keyword to filter options"
+    "area_search":"enter a keyword to filter options",
+    "hint":"Using TAB select options"
   },
   "accordion":{
     "title": "Title",

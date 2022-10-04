@@ -11,7 +11,8 @@
       :theme=theme
       ref="refOpenBtn"
       aria-haspopup="listbox"
-      :aria-expanded="listboxOpen"
+      :aria-expanded="listboxOpen ? 'true' : 'false'"
+      :aria-controls="`${fixId}-listbox`"
       :disabled="disabled"
       :size="size"
       @click="handleClickSelect"
@@ -28,6 +29,7 @@
       >
         <span v-if="placeholder">{{ placeholder }}</span>
         <span v-else>{{ t('select.placeholder') }}</span>
+        <span class="visually-hidden">{{ t('select.hint') }}</span>
       </span>
       <span
         v-else-if="multiple !== undefined"
@@ -67,6 +69,7 @@
       </div>
     </bpa-button>
     <ul
+      :id="`${fixId}-listbox`"
       role="listbox"
       ref="refListbox"
       tabindex="-1"
