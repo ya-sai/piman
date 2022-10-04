@@ -1,13 +1,12 @@
 <template>
-  <div
-    role="navigation"
+  <nav
     :aria-label="t('breadcrumb.current_page')"
     class="bpa-breadcrumb"
   >
     <ol>
       <slot></slot>
     </ol>
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">
