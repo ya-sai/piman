@@ -14,7 +14,7 @@
       ref="refPopBtn"
       :aria-controls="`popover-${fixId}-content`"
       @click="handleClick"
-      :size=size
+      :size="size"
       :disabled="disabled"
     >
       <slot name="title">{{ title }}</slot>
