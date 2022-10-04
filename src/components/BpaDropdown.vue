@@ -10,6 +10,8 @@
       :theme="theme"
       aria-haspopup="listbox"
       :aria-expanded="listboxOpen ? 'true' : 'false'"
+      :aria-controls="`${fixId}-listbox`"
+      :aria-description="t('dropdown.hint')"
       :disabled="disabled"
       :size="size"
       @click="handleClickSelect"
@@ -26,6 +28,7 @@
       <slot name="affix"></slot>
     </bpa-button>
     <ul
+      :id="`${fixId}-listbox`"
       role="listbox"
       ref="refBpaDropList"
       tabindex="-1"

@@ -11,7 +11,9 @@
       :theme=theme
       ref="refOpenBtn"
       aria-haspopup="listbox"
-      :aria-expanded="listboxOpen"
+      :aria-expanded="listboxOpen ? 'true' : 'false'"
+      :aria-controls="`${fixId}-listbox`"
+      :aria-description="t('select.hint')"
       :disabled="disabled"
       :size="size"
       @click="handleClickSelect"
@@ -67,6 +69,7 @@
       </div>
     </bpa-button>
     <ul
+      :id="`${fixId}-listbox`"
       role="listbox"
       ref="refListbox"
       tabindex="-1"

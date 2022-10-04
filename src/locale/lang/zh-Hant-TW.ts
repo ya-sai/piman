@@ -31,6 +31,7 @@ const translation: Translation = {
     "goto":"前往",
     "new_tab":"另開視窗前往",
     "placeholder": "選擇執行動作",
+    "hint":"請使用 TAB 操作選單"
   },
   "input":{
     "show":"點擊顯示密碼",
@@ -46,7 +47,8 @@ const translation: Translation = {
     "placeholder": "請選擇",
     "clear":"清空下拉式選單",
     "search":"搜尋",
-    "area_search":"請輸入關鍵字搜尋與過濾下拉式選單選項"
+    "area_search":"請輸入關鍵字搜尋與過濾下拉式選單選項",
+    "hint":"請使用 TAB 操作選單"
   },
   "accordion":{
     "title": "標題",
