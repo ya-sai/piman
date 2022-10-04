@@ -10,7 +10,6 @@
         type="button"
         :aria-controls="`accordion-content-${fixId}`"
         :id="`accordion-title-${fixId}`"
-        aria-selected="false"
         :aria-expanded="`${accordionContainerOpen}`"
         @click="handleClickAccordion"
       >
