@@ -8,7 +8,7 @@
   >
     <input
       type="checkbox"
-      :id=fixId
+      :id="fixId"
       v-model="activeCheck"
       :disabled="disabled"
       :value="value"

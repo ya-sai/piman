@@ -11,9 +11,9 @@
       :theme=theme
       ref="refOpenBtn"
       aria-haspopup="listbox"
-      :aria-expanded=listboxOpen
-      :disabled=disabled
-      :size=size
+      :aria-expanded="listboxOpen"
+      :disabled="disabled"
+      :size="size"
       @click="handleClickSelect"
       :class="[
         'bpa-select-btn',

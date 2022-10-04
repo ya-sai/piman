@@ -7,11 +7,11 @@
     <bpa-button
       type="button"
       :id="`${fixId}-btn`"
-      :theme=theme
+      :theme="theme"
       aria-haspopup="listbox"
-      :aria-expanded=listboxOpen
-      :disabled=disabled
-      :size=size
+      :aria-expanded="listboxOpen ? 'true' : 'false'"
+      :disabled="disabled"
+      :size="size"
       @click="handleClickSelect"
       :class="[
         'bpa-dropdown-btn',

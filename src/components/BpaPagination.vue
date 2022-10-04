@@ -18,7 +18,7 @@
           class="page-size-select"
           :options="pageSizeOptions"
           disabledClear
-          :size=size
+          :size="size"
           @input="onChangeSize"
         >
           <template v-slot:prefix>
@@ -44,7 +44,7 @@
               :aria-disabled="currentPage === 1 ? true : false"
               :disabled="currentPage === 1 ? true : false"
               theme="primary-ghost"
-              :size=size
+              :size="size"
               @click="handleClickPager(1)"
             >
               <slot name="first-page-text">
@@ -58,7 +58,7 @@
               :aria-disabled="currentPage === 1 ? true : false"
               :disabled="currentPage === 1 ? true : false"
               theme="primary-ghost"
-              :size=size
+              :size="size"
               @click="handleClickPager(prevPage)"
             >
               <slot name="prev-page-text">
@@ -75,7 +75,7 @@
             <bpa-button
               :aria-current="item === currentPage ? true : false"
               :theme="item === currentPage ? 'primary' : 'primary-ghost'"
-              :size=size
+              :size="size"
               @click="handleClickPager(item)"
             >
               <span class="visually-hidden">{{ t('pagination.goto') }}</span>
@@ -88,7 +88,7 @@
               :aria-disabled="currentPage === totalPages ? true : false"
               :disabled="(currentPage === totalPages) || (totalPages === 0) ? true : false"
               theme="primary-ghost"
-              :size=size
+              :size="size"
               @click="handleClickPager(nextPage)"
             >
               <slot name="next-page-text">
@@ -105,7 +105,7 @@
               :aria-disabled="currentPage === totalPages ? true : false"
               :disabled="(currentPage === totalPages) || (totalPages === 0) ? true : false"
               theme="primary-ghost"
-              :size=size
+              :size="size"
               @click="handleClickPager(totalPages)"
             >
               <slot name="last-page-text">
@@ -130,7 +130,7 @@
           :value="jumperNumber"
           @inputKeyup="handleClickPager"
           disabled-clear
-          :size=size
+          :size="size"
           :id="goPagesId"
         />
       </label>
