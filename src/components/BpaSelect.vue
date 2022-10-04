@@ -13,7 +13,6 @@
       aria-haspopup="listbox"
       :aria-expanded="listboxOpen ? 'true' : 'false'"
       :aria-controls="`${fixId}-listbox`"
-      :aria-description="t('select.hint')"
       :disabled="disabled"
       :size="size"
       @click="handleClickSelect"
@@ -30,6 +29,7 @@
       >
         <span v-if="placeholder">{{ placeholder }}</span>
         <span v-else>{{ t('select.placeholder') }}</span>
+        <span class="visually-hidden">{{ t('select.hint') }}</span>
       </span>
       <span
         v-else-if="multiple !== undefined"
