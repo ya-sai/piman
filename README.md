@@ -40,7 +40,7 @@ Vue.use(piman)
 
 
 ## 📖 開發文件
-[前往 Piman Notion 觀看](https://piman.notion.site/Piman-6389e4787ceb405abe42ffb37cfe1ca4)
+[前往 Piman 文件](https://ya-sai.github.io/piman/category/document/index.html)
 
 ## 😎 成為貢獻者
 我們正在招募貢獻者幫助我們改善 Piman，如果您有興趣，請先至 [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) 以及 [Developer Guide](https://piman.notion.site/Contributors-Piman-4d5c910dfbee4066b455cb07d0684af8) ，若有興趣，請來信至 [piman@bluepalnet.com.tw](mailto:piman@bluepalnet.com.tw)。
