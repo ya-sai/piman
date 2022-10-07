@@ -49,8 +49,9 @@ Vue.use(piman)
 ## 😎 成為貢獻者
 我們正在招募貢獻者幫助我們改善 Piman，如果您有興趣，請先至 [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) 以及 [Developer Guide](https://piman.notion.site/Contributors-Piman-4d5c910dfbee4066b455cb07d0684af8) ，若有興趣，請來信至 [piman@bluepalnet.com.tw](mailto:piman@bluepalnet.com.tw)。
 
-## 💬 社群
-(coming soon)
+## 💬 體驗調查
+我們非常希望能接收到您[對 Piman 的感受或使用心得](https://app.ballparkhq.com/record/c8c3d48f-7efc-4f3e-8e1d-7b77c14b2a0e)，
+以做為 Piman 越來越好的參考，並且幫助到更多的使用者。
 
 ## ❗ Copyright and license 
 Licensed under the [Apache 2.0 License](https://github.com/ya-sai/piman/blob/main/LICENSE).
