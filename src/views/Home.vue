@@ -5,7 +5,7 @@
       <article>
         <a href="https://github.com/ya-sai/piman" target="_blank" rel="noreferrer noopener">Github</a>
         <br><br>
-        <a href="https://piman.notion.site/piman/Piman-6389e4787ceb405abe42ffb37cfe1ca4" target="_blank" rel="noreferrer noopener">Docs</a>
+        <a href="https://ya-sai.github.io/piman/" target="_blank" rel="noreferrer noopener">Docs</a>
       </article>
     </section>
   </div>
