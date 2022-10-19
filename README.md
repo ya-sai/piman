@@ -5,7 +5,7 @@
 
 [前往 Piman 網站](https://ya-sai.github.io/piman/)
 
-![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/npm/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) 
+![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/nodejs/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) 
 
 ## 🛠 快速開始
 
