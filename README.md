@@ -1,46 +1,59 @@
-# piman
 
-This template should help get you started developing with Vue 3 in Vite.
+# Piman 無障礙網頁設計 UI 框架 (Vue3 開發中)
 
-## Recommended IDE Setup
+> Piman 是一款致力於降低開發無障礙網頁設計成本，使用 Vue 3 的 UI 框架。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[前往 Piman 網站](https://ya-sai.github.io/piman/)
 
-## Type Support for `.vue` Imports in TS
+![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/nodejs/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) ![image](https://badgen.net/badge/Typescript/4.4.4/blue) 
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 🛠 快速開始
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+### 安裝
+```bash
+npm install @yasai/piman @vue3
 ```
 
-### Compile and Hot-Reload for Development
+### Vue 專案
+```js
+//main.js
+import Vue from 'vue'
 
-```sh
-npm run dev
+import piman from "@yasai/piman";
+import '@yasai/piman/dist/piman.css';
+Vue.use(piman)
 ```
 
-### Type-Check, Compile and Minify for Production
+### Nuxt 專案
+```js
+// nuxt.config.js
+export default {
+  plugins: [
+    '@/plugins/piman',
+  ],
+}
 
-```sh
-npm run build
+// plugins/piman.js
+import Vue from 'vue'
+import piman from "@yasai/piman";
+Vue.use(piman)
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## 🖥 瀏覽器支援
+主流瀏覽器
 
-```sh
-npm run test:unit
-```
+
+## 📖 開發文件
+[前往 Piman 文件](https://ya-sai.github.io/piman/category/document/index.html)
+
+## 😎 成為貢獻者
+我們正在招募貢獻者幫助我們改善 Piman，如果您有興趣，請先至 [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) 以及 [Developer Guide](https://piman.notion.site/Contributors-Piman-4d5c910dfbee4066b455cb07d0684af8) ，若有興趣，請來信至 [piman@bluepalnet.com.tw](mailto:piman@bluepalnet.com.tw)。
+
+## 💬 體驗調查
+我們非常希望能接收到您[對 Piman 的感受或使用心得](https://app.ballparkhq.com/record/c8c3d48f-7efc-4f3e-8e1d-7b77c14b2a0e)，
+以做為 Piman 越來越好的參考，並且幫助到更多的使用者。
+
+## ❗ Copyright and license 
+Licensed under the [Apache 2.0 License](https://github.com/ya-sai/piman/blob/main/LICENSE).

@@ -6,6 +6,7 @@
     "src/**/*.vue",
     "src/**/*.ts",
     "src/**/*.d.ts",
+    "src/**/*.vue.d.ts",
     "src/**/*.tsx"
   ],
   "exclude": ["src/**/__tests__/*"],
@@ -19,6 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
     "declaration": true,
     "outDir": "dist",
     "declarationDir": "dist"
