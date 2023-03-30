@@ -1,0 +1,32 @@
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+$color-primary: #0073E6!default;
+$color-white: #FFF!default;
+$color-black: #000!default;
+$color-gray: #888!default;
+$color-visited: #5C45D2!default;
+
+$color-success: #458227!default;
+$color-warning: #A36A00!default;
+$color-danger: #EC0303!default;
+
+$border-color: lighten($color-gray, 20%)!default;
+$outline-color: #FFBB00!default;
+
+$box-shadow: 0 12px 18px rgba($color-black, 0.15)!default;
+
+
+// -------------------------------------
+//   break point
+// -------------------------------------
+
+$breakpoint: 540px, 768px, 960px, 1280px, 1440px, 1920px!default;;
+
+
+// -------------------------------------
+//   Others
+// -------------------------------------
+
+$prefix: 'pi';
