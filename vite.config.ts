@@ -11,7 +11,8 @@ export default defineConfig({
     vue(),
     dts({
       cleanVueFileName: true,
-      insertTypesEntry: true
+      insertTypesEntry: true,
+      aliasesExclude: ['src/views']
     })
   ],
   resolve: {

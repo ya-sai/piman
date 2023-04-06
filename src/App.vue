@@ -1,13 +1,26 @@
 <script setup lang="ts">
-import { PiButton } from "../dist/piman-vue3.es";
+import DemoButton from "@/views/DemoButton.vue";
+import DemoCheckbox from "./views/DemoCheckbox.vue";
+import DemoCard from "./views/DemoCard.vue";
+import DemoTabs from "./views/DemoTabs.vue";
+import DemoAccordion from "./views/DemoAccordion.vue";
+import PiTabPanel from "./components/Tabs/PiTabPanel.vue";
+import PiTabs from "./components/Tabs/PiTabs.vue";
+import { ref } from "vue";
+
+const activeTab = ref('button')
+
 </script>
 
 <template>
-  <section>
-    <h2>按鈕</h2>
-    <pi-button>按鈕</pi-button>
-    <pi-button :loading="true">按鈕</pi-button>
-  </section>
+  
+  <pi-tabs v-model="activeTab">
+    <pi-tab-panel name="button" label="按鈕"><DemoButton/></pi-tab-panel>
+    <pi-tab-panel name="checkbox" label="核取方塊"><DemoCheckbox/></pi-tab-panel>
+    <pi-tab-panel name="card" label="卡片"><DemoCard/></pi-tab-panel>
+    <pi-tab-panel name="tabs" label="標籤"><DemoTabs/></pi-tab-panel>
+    <pi-tab-panel name="accordion" label="手風琴"><DemoAccordion/></pi-tab-panel>
+  </pi-tabs>
 </template>
 
 <style scoped>
