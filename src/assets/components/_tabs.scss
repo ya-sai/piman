@@ -1,0 +1,63 @@
+.#{$prefix}-tabs {
+  .#{$prefix}-tabs-list {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 3px 0.5rem 0;
+    margin: 0;
+  }
+  .#{$prefix}-tabs__item {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+    &:first-child {
+      .#{$prefix}-btn {
+        border-top-left-radius: 0.25rem;
+      }
+    }
+    &:last-child {
+      .#{$prefix}-btn {
+        border-top-right-radius: 0.25rem;
+      }
+    }
+    .#{$prefix}-btn {
+      border-radius: 0;
+      .badge {
+        position: relative;
+        top: -1px;
+        padding: 0.125rem 0.25rem;
+        margin-left: 0.25rem;
+        line-height: 1.125;
+        border-radius: 1rem;
+        background-color: lighten($color-warning, 40%);
+        color: $color-black;
+        font-size: 0.75rem;
+      }
+      .tab-icon {
+        margin: 0 0.25rem;
+      }
+    }
+    
+    &.#{$prefix}-tabs__item--selected {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .#{$prefix}-tabs-panels {
+    border: 1px solid $border-color;
+    margin-top: -1px;
+    background-color: $color-white;
+    border-radius: 0.25rem;
+  }
+  .#{$prefix}-tabs-panel {
+    padding: 1rem;
+    &:focus {
+      outline: 3px solid $outline-color;
+    }
+    &.nopadding {
+      padding: 0;
+    }
+  }
+}
