@@ -1,0 +1,25 @@
+.#{$prefix}-breadcrumb {
+  ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.#{$prefix}-breadcrumb__item {
+  &:after {
+    content: '/';
+     margin: 0 0.5rem;
+     color: $border-color;
+  }
+  &[aria-current] {
+    font-weight: normal;
+    a {
+      color: $color-black;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}

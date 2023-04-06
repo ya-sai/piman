@@ -7,6 +7,7 @@ import DemoAccordion from "./views/DemoAccordion.vue";
 import PiTabPanel from "./components/Tabs/PiTabPanel.vue";
 import PiTabs from "./components/Tabs/PiTabs.vue";
 import { ref } from "vue";
+import DemoBreadcrumb from "./views/DemoBreadcrumb.vue";
 
 const activeTab = ref('button')
 
@@ -20,6 +21,7 @@ const activeTab = ref('button')
     <pi-tab-panel name="card" label="卡片"><DemoCard/></pi-tab-panel>
     <pi-tab-panel name="tabs" label="標籤"><DemoTabs/></pi-tab-panel>
     <pi-tab-panel name="accordion" label="手風琴"><DemoAccordion/></pi-tab-panel>
+    <pi-tab-panel name="breadcrumb" label="頁面導覽(麵包屑)"><DemoBreadcrumb/></pi-tab-panel>
   </pi-tabs>
 </template>
 
