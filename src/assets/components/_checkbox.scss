@@ -1,0 +1,89 @@
+.#{$prefix}-checkbox-label {
+  position: relative;
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+  .#{$prefix}-checkbox__inner {
+    display: inline-block;
+    vertical-align: top;
+    // margin-left: 0.25rem;
+    padding-left: 1.5rem;
+    color: $color-black;
+    line-height: 1.5;
+    &:before {
+      content:'';
+      position: absolute;
+      // top: 0.25rem;
+      // left: 0.3rem;
+      transform: translate3d(-1.1875rem, 0.25rem, 0) rotate(45deg);
+      width: 0.5rem;
+      height: 0.75rem;
+      border: solid $color-primary;
+      border-width: 0 0.2rem 0.2rem 0;
+      opacity: 0;
+      transition: opacity 120ms ease-in;
+      @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+        display: none;
+        border-color: $color-primary;
+      }
+    }
+    &:after {
+      content:'';
+      position: absolute;
+      top: 50%;
+      left: calc((1.125rem - 0.75rem) / 2);
+      width: 0.75rem;
+      height: 0.2rem;
+      opacity: 0;
+      transform: translate3d(0, -50%, 0);
+      background-color: $color-primary;
+      @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+        display: none;
+        border-color: $color-primary;
+      }
+    }
+    &.#{$prefix}-checkbox-input--indeterminate {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  &.#{$prefix}-checkbox-label--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.#{$prefix}-checkbox-input[type="checkbox"] {
+  cursor: pointer;
+  appearance: none;
+  position: absolute;
+  top: 0.1875rem;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  background-color: $color-white;
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+  transition: background-color 160ms ease-in, border-color 160ms ease-in, box-shadow 160ms ease-in;
+  &:hover {
+    border-color: $color-primary;
+  }
+  &:active {
+    background-color: lighten($color-primary, 40%);
+  }
+  &:checked + .#{$prefix}-checkbox__inner {
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px $outline-color;
+  }
+}
