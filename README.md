@@ -3,7 +3,7 @@
 
 > Piman 是一款致力於降低開發無障礙網頁設計成本，使用 Vue 2 的 UI 框架。
 
-[前往 Piman 網站](https://ya-sai.github.io/piman/)
+[前往 Piman 網站](https://piman.cc)
 
 ![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/nodejs/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) ![image](https://badgen.net/badge/Typescript/4.4.4/blue) 
 
