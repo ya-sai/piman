@@ -2,6 +2,7 @@
   <nav
     :aria-label="t('breadcrumb.current_page')"
     class="pi-breadcrumb"
+    ref="elBreadcrumb"
   >
     <ol>
       <slot></slot>
@@ -11,18 +12,17 @@
 
 <script lang="ts" setup>
 import useI18n from '@/locales/useI18n';
-import { getCurrentInstance, onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const { t } = useI18n()
 
+const elBreadcrumb = ref<null|HTMLElement>(null)
+
 onMounted(()=>{
-  const self = getCurrentInstance()
-  if(self && self.slots.default){
-    const items = self.slots.default()[0].children
-    console.log(items);
-    
-    if (items.length && items[items.length - 1].el) {
-      items[items.length - 1].el!.setAttribute('aria-current', 'page');
+  if(elBreadcrumb.value){
+    const items = elBreadcrumb.value.querySelectorAll('ol > li');
+    if (items.length) {
+      items[items.length - 1].setAttribute('aria-current', 'page');
     }
   }
 })

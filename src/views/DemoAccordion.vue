@@ -27,6 +27,7 @@
 </template>
 
 <script lang="ts" setup>
+//@ts-ignore
 import { PiAccordion, PiAccordionItem } from "/dist/piman-vue3.es";
 
 </script>

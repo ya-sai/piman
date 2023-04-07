@@ -18,9 +18,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import PiBreadcrumb from "@/components/Breadcrumb/PiBreadcrumb.vue";
-import PiBreadcrumbItem from "@/components/Breadcrumb/PiBreadcrumbItem.vue";
-
+//@ts-ignore
+import { PiBreadcrumb, PiBreadcrumbItem } from "/dist/piman-vue3.es";
 
 const path = ref([
   { title: '🏠首頁', url: '/'},

@@ -5,7 +5,7 @@ export default function (){
   let translation = ref<any>(languages["zh-Hant-TW"])
 
   const t = (path: string) => {
-    let value: string|number  = ''
+    let value: string  = ''
     const array = path.split('.')
     let currentLang: any = translation.value
   
