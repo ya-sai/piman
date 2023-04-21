@@ -212,5 +212,6 @@ export default Vue.extend({
 .flex-group {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 </style>
