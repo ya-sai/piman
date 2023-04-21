@@ -97,6 +97,15 @@ export default Vue.extend({
   }
   h2 {
     font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   section {
     margin-bottom: 1.5rem;
