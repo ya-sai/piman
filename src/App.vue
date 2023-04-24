@@ -135,6 +135,9 @@ export default Vue.extend({
     &::-webkit-scrollbar {
       width: 0;
     }
+    @media screen and (max-width: 768px) {
+      width: 0;
+    }
     a {
       color: white;
       &:visited {
@@ -159,6 +162,9 @@ export default Vue.extend({
         &:hover {
           background-color: rgba(#020202, 0.7);
           opacity: 1;
+        }
+        &[aria-current] {
+          background-color: #020202;
         }
       }
     }
@@ -195,5 +201,9 @@ export default Vue.extend({
     padding: 1rem 2rem;
     background-color: #eee;
     border-top-left-radius: 0.75rem;
+    @media screen and (max-width: 768px) {
+      padding: 1rem;
+      border-top-right-radius: 0.75rem;
+    }
   }
 </style>
