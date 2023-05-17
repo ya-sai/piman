@@ -42,7 +42,7 @@
           >
             <div>
               爸爸買給我
-              <p>購買連結：<a href="https://bpnpm.blueplanet.com.tw/" target="_blank" rel="noopener noreferrer">Bp Npm</a></p>
+              <p>購買連結：<a href="https://blueplanet.com.tw" target="_blank" rel="noopener noreferrer">Bp Npm</a></p>
               <p>購買人：<bpa-input v-model="value"/></p>
               <bpa-select
                 v-model="value2"

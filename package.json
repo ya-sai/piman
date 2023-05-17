@@ -1,8 +1,8 @@
 {
   "name": "@yasai/piman",
-  "version": "1.0.0-alpha.30",
+  "version": "1.0.0-alpha.31",
   "description": "Piman is an open-source accessibility UI framework.",
-  "author": "Blueplanet, Inc.",
+  "author": "Blue Planet Inc.",
   "keywords": [
     "css",
     "scss",

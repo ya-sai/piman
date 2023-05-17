@@ -6,6 +6,8 @@ import { use } from "../locale";
 // 1. 引入新增的原件
 import BpaTree from "./BpaTree";
 import BpaBreadcrumb from "./BpaBreadcrumb.vue";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import BpaBreadcrumbItem from "./BpaBreadcrumbItem.vue";
 import BpaButton from "./BpaButton.vue";
 import BpaCard from "./BpaCard.vue";
