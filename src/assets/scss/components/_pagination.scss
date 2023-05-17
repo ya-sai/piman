@@ -5,7 +5,7 @@
   // align-items: center;
   display: block;
   color: $color-black;
-  @media screen and(max-width: nth($breakpoint, 2)){
+  @media screen and (max-width: nth($breakpoint, 2)){
     display: block;
   }
 }
@@ -17,7 +17,7 @@
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  @media screen and(max-width: nth($breakpoint, 2)){
+  @media screen and (max-width: nth($breakpoint, 2)){
     display: block;
     margin-bottom: 1rem;
     text-align: center;
@@ -30,7 +30,7 @@
       display: flex;
       align-items: center;
     }
-    @media screen and(max-width: nth($breakpoint, 2)){
+    @media screen and (max-width: nth($breakpoint, 2)){
       display: flex;
       justify-content: center;
     }
@@ -40,7 +40,7 @@
   margin: 0 0.25rem;
   display: inline-block;
   vertical-align: middle;
-  @media screen and(max-width: nth($breakpoint, 2)){
+  @media screen and (max-width: nth($breakpoint, 2)){
     margin: 0;
     display: inline-block;
     vertical-align: middle;
@@ -54,26 +54,26 @@
   &.#{$prefix}-pagination-info--pagesize {
     // display: flex;
     // align-items: center;
-    @media screen and(max-width: nth($breakpoint, 2)){
+    @media screen and (max-width: nth($breakpoint, 2)){
       display: none;
     }
   }
 }
 .#{$prefix}-pagination {
   margin: 0 1rem;
-  @media screen and(max-width: nth($breakpoint, 2)){
+  @media screen and (max-width: nth($breakpoint, 2)){
    margin: 0;
   }
   ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media screen and(max-width: nth($breakpoint, 2)){
+    @media screen and (max-width: nth($breakpoint, 2)){
       display: block;
     }
     li {
       margin: 0 0.25rem;
-      @media screen and(max-width: nth($breakpoint, 2)){
+      @media screen and (max-width: nth($breakpoint, 2)){
         display: none;
       }
       &:first-child {
@@ -85,7 +85,7 @@
       &.current,
       &.prev,
       &.next {
-        @media screen and(max-width: nth($breakpoint, 2)){
+        @media screen and (max-width: nth($breakpoint, 2)){
           display: inline-block;
           vertical-align: middle;
         }

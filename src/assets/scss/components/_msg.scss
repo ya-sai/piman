@@ -11,7 +11,7 @@
   border: 1px solid $border-color;
   box-shadow: 0 0.25rem 0.5rem rgba($color-black, 0.125);
   transition-duration: 0.3s;
-  @media screen and(max-width: nth($breakpoint, 2)){
+  @media screen and (max-width: nth($breakpoint, 2)){
     max-width: calc(100% - 2rem);
     display: block;
   }

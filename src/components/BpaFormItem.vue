@@ -141,7 +141,9 @@ export default Vue.extend({
     this.innerError = this.error
     this.innerHint = this.hint
 
-    this.$parent.$emit('mountFormItem', this)
+    if(this.$parent) {
+      this.$parent.$emit('mountFormItem', this)
+    }
 
     this.$on('blur',()=>{
       this.validate('blur').catch(()=>{ /*不作為*/ })

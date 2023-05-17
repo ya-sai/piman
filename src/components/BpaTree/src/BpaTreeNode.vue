@@ -106,6 +106,8 @@ export default Vue.extend({
       return (this as any).expanded ? "down" : "right";
     },
     isParentsNode() {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       return this.$parent.$options.name === "BpaTreeNode" ? 1 : 0;
     },
   },

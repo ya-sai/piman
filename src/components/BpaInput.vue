@@ -129,11 +129,16 @@ export default (Vue as VueConstructor<Vue & ThisData>).extend({
     },
     handleBlur() {
       this.focus = false
-      this.$parent.$emit('blur', (this as any).value)
+      if(this.$parent) {
+        this.$parent.$emit('blur', (this as any).value)
+      }
+      
     },
     handleInput(event: any) {
       this.$emit('input', event.target.value);
-      this.$parent.$emit('change', event.target.value)
+      if(this.$parent) {
+        this.$parent.$emit('change', event.target.value)
+      }
     },
     handleClearInput() {
       this.$emit('input', '');
