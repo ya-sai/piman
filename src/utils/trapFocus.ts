@@ -80,7 +80,7 @@ export default class FocusTrap {
    * 清除 focus 範圍限制
    */
   dismiss(): void{
-    this._platformList.forEach(p => { p.parentNode?.removeChild(p) })
+    this._platformList.forEach(p => { p.parentNode!.removeChild(p) })
   }
 
   /**

@@ -280,7 +280,7 @@ export default (Vue as VueConstructor<Vue & ThisData>).extend({
       if(this.formItem) this.formItem.$emit('change', val)
       // this.selected = '';
       this.selectedId = '';
-      document.getElementById((this as any).fixId+'-btn')?.focus();
+      document.getElementById((this as any).fixId+'-btn')!.focus();
     },
     handleClickOption(item: {value: any, label: string}, index: number, parentIndex: number, group: boolean) {
       this.selectedId = group ? `${(this as any).fixId}-optgroup-${parentIndex}-option-${index}` : `${(this as any).fixId}-option-${index}`;
