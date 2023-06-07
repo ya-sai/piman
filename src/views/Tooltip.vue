@@ -49,7 +49,8 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name:'Home',
+  // eslint-disable-next-line vue/multi-word-component-names
+  name:'Tooltip',
   data() {
     return {
       path: [

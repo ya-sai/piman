@@ -90,6 +90,8 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  // eslint-disable-next-line vue/multi-word-component-names
+  name:'Pagination',
   data() {
     return {
       totalPages: 100,

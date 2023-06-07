@@ -88,6 +88,8 @@ interface NodeData {
   label: string;
 }
 export default Vue.extend({
+  // eslint-disable-next-line vue/multi-word-component-names
+  name:'Tree',
   data() {
     return {
       treeData1: [

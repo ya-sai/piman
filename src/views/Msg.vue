@@ -59,6 +59,8 @@ import Vue from 'vue'
 import Bpa from "@/components";
 const { Msg } = Bpa
 export default Vue.extend({
+  // eslint-disable-next-line vue/multi-word-component-names
+  name:'Msg',
   data() {
     return {
       value:'',

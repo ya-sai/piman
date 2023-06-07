@@ -5,7 +5,7 @@
 
 [前往 Piman 網站](https://piman.cc)
 
-![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/nodejs/v16/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) ![image](https://badgen.net/badge/Typescript/4.4.4/blue) 
+![image](https://badgen.net/badge/vue/2.x/green) ![image](https://badgen.net/badge/nodejs/v18/red) ![image](https://badgen.net/badge/license/Apache-2.0/orange) ![image](https://badgen.net/badge/PRs/welcome/green) ![image](https://badgen.net/badge/Typescript/4.4.4/blue) 
 
 
 
