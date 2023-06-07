@@ -404,7 +404,7 @@ export default (Vue as VueConstructor<Vue & ThisData>).extend({
         (this as any).$emit('input', val)
         if((this as any).formItem){
           (this as any).$nextTick(()=>{
-            (this as any).formItem?.$emit('change', val)
+            (this as any).formItem!.$emit('change', val)
           })
         }
       }
