@@ -49,10 +49,10 @@ Vue.use(piman)
 [前往 Piman 文件](https://bpio.gitbook.io/piman/vue2/getting-start)
 
 ## 😎 成為貢獻者
-我們正在招募貢獻者幫助我們改善 Piman，如果您有興趣，請先至 [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) 以及 [Developer Guide](https://piman.cc/category/document/piman-developer/) ，若有興趣，請來信至 [piman@bluepalnet.com.tw](mailto:piman@bluepalnet.com.tw)。
+我們正在招募貢獻者幫助我們改善 Piman，如果您有興趣，請先至 [Contributing Guide](https://github.com/ya-sai/piman/blob/main/.github/CONTRIBUTING.md) 以及 [Developer Guide](https://bpio.gitbook.io/piman/dev-guide) ，若有興趣，請來信至 [piman@bluepalnet.com.tw](mailto:piman@bluepalnet.com.tw)。
 
 ## 💬 體驗調查
-我們非常希望能接收到您[對 Piman 的感受或使用心得](https://bpio.gitbook.io/piman/about)，
+我們非常希望能接收到您[對 Piman 的感受或使用心得](https://bpio.gitbook.io/piman/about#contact)，
 以作為 Piman 越來越好的參考，並且幫助到更多的使用者。
 
 ## ❗ Copyright and license 
